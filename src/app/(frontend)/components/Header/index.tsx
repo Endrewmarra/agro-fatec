@@ -11,8 +11,12 @@ export const Header = () => {
         justifyContent: 'space-between',
         alignItems: 'center',
         width: '100%',
-        paddingX: 4,
+        paddingX: 15,
         paddingY: 2,
+        position: 'fixed',
+        backgroundColor: 'white',
+        zIndex: 1,
+        borderBottom: '1px solid #dededeff',
       }}
     >
       <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
@@ -44,8 +48,8 @@ export const Header = () => {
           color: 'grey.400',
           textDecoration: 'none',
         }}
-      >
-        <Link href="/" style={{ textDecoration: 'none', color: theme.palette.grey[700] }}>
+      >{/*Adicionar hover sobre os botoes*/}
+        <Link href="#Home" style={{ textDecoration: 'none', color: theme.palette.grey[700] }}>{/*Alterar para cor verde*/}
           Home
         </Link>
 

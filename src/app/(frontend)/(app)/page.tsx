@@ -12,7 +12,7 @@ export default async function HomePage() {
 
   return (
     <Box>
-      <Header />
+      <Header id='Home'/>
 
       <Appresentation />
     </Box>

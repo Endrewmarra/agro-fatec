@@ -102,14 +102,15 @@ export const Appresentation = () => {
               boxShadow: 3,
               display: 'grid',
               color: '#717171ff',
-              gridTemplateColumns: '1fr 2fr',
+              gridTemplateColumns: '1fr 4fr',
               width: '185px',
+              alignItems:'center',
             }}
           >
-            <Typography>
+            
               <TrendingUp color="#00a63e" />
-            </Typography>
-            <Typography>
+            
+            <Typography >
               <Typography sx={{ fontSize: 12 }}>Produtividade</Typography>
               <Typography sx={{ fontSize: 16, color: '#016630', fontWeight: '600' }}>
                 +30%
@@ -123,13 +124,14 @@ export const Appresentation = () => {
               boxShadow: 3,
               display: 'grid',
               color: '#717171ff',
-              gridTemplateColumns: '1fr 2fr',
+              gridTemplateColumns: '1fr 4fr',
               width: '185px',
+              alignItems:'center',
             }}
           >
-            <Typography>
+            
               <Users color="#00a63e" />
-            </Typography>
+            
             <Typography>
               <Typography sx={{ fontSize: 12 }}>Clientes</Typography>
               <Typography sx={{ fontSize: 16, color: '#016630', fontWeight: '600' }}>
@@ -144,14 +146,15 @@ export const Appresentation = () => {
               boxShadow: 3,
               display: 'grid',
               color: '#717171ff',
-              gridTemplateColumns: '1fr 2fr',
+              gridTemplateColumns: '1fr 4fr',
               width: '185px',
+              alignItems:'center',
             }}
           >
-            <Typography>
-              <Award color="#00a63e" />
-            </Typography>
-            <Typography>
+            
+              <Award color="#00a63e"  alignmentBaseline='middle'/>
+            
+            <Typography >
               <Typography sx={{ fontSize: 12 }}>Experiência</Typography>
               <Typography sx={{ fontSize: 16, color: '#016630', fontWeight: '600' }}>
                 15 anos
