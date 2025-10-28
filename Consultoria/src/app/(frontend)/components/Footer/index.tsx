@@ -54,158 +54,182 @@ export const Footer = () => {
         </Box>
         <Box sx={{ color: 'white' }}>
           Nossos Serviços
-          {/*Adicionar hover sobre os links  */}
+          
           <Box sx={{ lineHeight: 2 }}>
-            <Link
+            <Box component={Link}
               href={'/'}
-              style={{
+              sx={{
                 display: 'block',
                 textDecoration: 'none',
                 color: 'grey',
                 fontSize: '16px',
                 fontWeight: 500,
+                transition: 'color 0.2s',
+            '&:hover': { color: '#00a63e' }
               }}
             >
               Consultoria em Milho
-            </Link>
-            <Link
+            </Box>
+            <Box component={Link}
               href={'/'}
-              style={{
+              sx={{
                 display: 'block',
                 textDecoration: 'none',
                 color: 'grey',
                 fontSize: '16px',
                 fontWeight: 500,
+                transition: 'color 0.2s',
+            '&:hover': { color: '#00a63e' }
               }}
             >
               Consultoria em Soja
-            </Link>
-            <Link
+            </Box>
+            <Box component={Link}
               href={'/'}
-              style={{
+              sx={{
                 display: 'block',
                 textDecoration: 'none',
                 color: 'grey',
                 fontSize: '16px',
                 fontWeight: 500,
+                transition: 'color 0.2s',
+            '&:hover': { color: '#00a63e' }
               }}
             >
               Consultoria em Sorgo
-            </Link>
-            <Link
+            </Box>
+            <Box component={Link}
               href={'/'}
-              style={{
+              sx={{
                 display: 'block',
                 textDecoration: 'none',
                 color: 'grey',
                 fontSize: '16px',
                 fontWeight: 500,
+                transition: 'color 0.2s',
+            '&:hover': { color: '#00a63e' }
               }}
             >
               Análise de Solo
-            </Link>
-            <Link
+            </Box>
+            <Box component={Link}
               href={'/'}
-              style={{
+              sx={{
                 display: 'block',
                 textDecoration: 'none',
                 color: 'grey',
                 fontSize: '16px',
                 fontWeight: 500,
+                transition: 'color 0.2s',
+            '&:hover': { color: '#00a63e' }
               }}
             >
               Manejo Integrado
-            </Link>
-            <Link
+            </Box>
+            <Box component={Link}
               href={'/'}
-              style={{
+              sx={{
                 display: 'block',
                 textDecoration: 'none',
                 color: 'grey',
                 fontSize: '16px',
                 fontWeight: 500,
+                transition: 'color 0.2s',
+            '&:hover': { color: '#00a63e' }
               }}
             >
               Monioramento de Safras
-            </Link>
+            </Box>
           </Box>
         </Box>
         <Box sx={{ color: 'white' }}>
           Empresa
-          {/*Adicionar hover sobre os links  */}
+          
           <Box sx={{ lineHeight: 2 }}>
-            <Link
+            <Box component={Link}
               href={'/'}
-              style={{
+              sx={{
                 display: 'block',
                 textDecoration: 'none',
                 color: 'grey',
                 fontSize: '16px',
                 fontWeight: 500,
+                transition: 'color 0.2s',
+            '&:hover': { color: '#00a63e' }
               }}
             >
               Sobre Nós
-            </Link>
-            <Link
+            </Box>
+            <Box component={Link}
               href={'/'}
-              style={{
+              sx={{
                 display: 'block',
                 textDecoration: 'none',
                 color: 'grey',
                 fontSize: '16px',
                 fontWeight: 500,
+                transition: 'color 0.2s',
+            '&:hover': { color: '#00a63e' }
               }}
             >
               Nossa Equipe
-            </Link>
-            <Link
+            </Box>
+            <Box component={Link}
               href={'/'}
-              style={{
+              sx={{
                 display: 'block',
                 textDecoration: 'none',
                 color: 'grey',
                 fontSize: '16px',
                 fontWeight: 500,
+                transition: 'color 0.2s',
+            '&:hover': { color: '#00a63e' }
               }}
             >
               Casos de sucesso
-            </Link>
-            <Link
+            </Box>
+            <Box component={Link}
               href={'/'}
-              style={{
+              sx={{
                 display: 'block',
                 textDecoration: 'none',
                 color: 'grey',
                 fontSize: '16px',
                 fontWeight: 500,
+                transition: 'color 0.2s',
+            '&:hover': { color: '#00a63e' }
               }}
             >
               Artigos e Blog
-            </Link>
-            <Link
+            </Box>
+            <Box component={Link}
               href={'/'}
-              style={{
+              sx={{
                 display: 'block',
                 textDecoration: 'none',
                 color: 'grey',
                 fontSize: '16px',
                 fontWeight: 500,
+                transition: 'color 0.2s',
+            '&:hover': { color: '#00a63e' }
               }}
             >
               Carreiras
-            </Link>
-            <Link
+            </Box>
+            <Box component={Link}
               href={'/'}
-              style={{
+              sx={{
                 display: 'block',
                 textDecoration: 'none',
                 color: 'grey',
                 fontSize: '16px',
                 fontWeight: 500,
+                transition: 'color 0.2s',
+            '&:hover': { color: '#00a63e' }
               }}
             >
               Política de Privacidade
-            </Link>
+            </Box>
           </Box>
         </Box>
 
