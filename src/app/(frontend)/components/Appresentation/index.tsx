@@ -104,13 +104,12 @@ export const Appresentation = () => {
               color: '#717171ff',
               gridTemplateColumns: '1fr 4fr',
               width: '185px',
-              alignItems:'center',
+              alignItems: 'center',
             }}
           >
-            
-              <TrendingUp color="#00a63e" />
-            
-            <Typography >
+            <TrendingUp color="#00a63e" />
+
+            <Typography>
               <Typography sx={{ fontSize: 12 }}>Produtividade</Typography>
               <Typography sx={{ fontSize: 16, color: '#016630', fontWeight: '600' }}>
                 +30%
@@ -126,12 +125,11 @@ export const Appresentation = () => {
               color: '#717171ff',
               gridTemplateColumns: '1fr 4fr',
               width: '185px',
-              alignItems:'center',
+              alignItems: 'center',
             }}
           >
-            
-              <Users color="#00a63e" />
-            
+            <Users color="#00a63e" />
+
             <Typography>
               <Typography sx={{ fontSize: 12 }}>Clientes</Typography>
               <Typography sx={{ fontSize: 16, color: '#016630', fontWeight: '600' }}>
@@ -148,13 +146,12 @@ export const Appresentation = () => {
               color: '#717171ff',
               gridTemplateColumns: '1fr 4fr',
               width: '185px',
-              alignItems:'center',
+              alignItems: 'center',
             }}
           >
-            
-              <Award color="#00a63e"  alignmentBaseline='middle'/>
-            
-            <Typography >
+            <Award color="#00a63e" alignmentBaseline="middle" />
+
+            <Typography>
               <Typography sx={{ fontSize: 12 }}>Experiência</Typography>
               <Typography sx={{ fontSize: 16, color: '#016630', fontWeight: '600' }}>
                 15 anos

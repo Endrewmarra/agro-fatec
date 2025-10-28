@@ -15,9 +15,9 @@ export default async function HomePage() {
 
   return (
     <Box>
-      <Header id={"Home"}/>
 
       <Appresentation />
+      
     </Box>
   )
 }

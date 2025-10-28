@@ -48,12 +48,13 @@ export const Header = () => {
           color: 'grey.400',
           textDecoration: 'none',
         }}
-      >{/*Adicionar hover sobre os botoes*/}
-        <Link href="" scroll  style={{ textDecoration: 'none', color:'#016630'  }}>
+      >
+        {/*Adicionar hover sobre os botoes*/}
+        <Link href="" scroll style={{ textDecoration: 'none', color: '#016630' }}>
           Home
         </Link>
 
-        <Link href="/artigos" style={{ textDecoration: 'none', color: theme.palette.grey[700], }}>
+        <Link href="/artigos" style={{ textDecoration: 'none', color: theme.palette.grey[700] }}>
           Artigos
         </Link>
         <Link
