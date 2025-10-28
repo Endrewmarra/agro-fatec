@@ -2,6 +2,8 @@ import { theme } from '@/app/config/theme'
 import { Box, Button, Typography } from '@mui/material'
 import { Leaf } from 'lucide-react'
 import Link from 'next/link'
+import { styled } from '@mui/material/styles'
+
 
 export const Header = () => {
   return (
@@ -49,20 +51,21 @@ export const Header = () => {
           textDecoration: 'none',
         }}
       >
-        {/*Adicionar hover sobre os botoes*/}
-        <Link href="" scroll style={{ textDecoration: 'none', color: '#016630' }}>
+        
+        <Box component={Link} href="#"  sx={{ textDecoration: 'none', color: '#016630',transition: 'color 0.2s',
+            '&:hover': { color: '#00a63e' } }}>
           Home
-        </Link>
+        </Box>
 
-        <Link href="/artigos" style={{ textDecoration: 'none', color: theme.palette.grey[700] }}>
+        <Box component={Link} href="/Artigos" sx={{ textDecoration: 'none', color:  theme.palette.grey[700], transition: 'color 0.2s','&:hover': { color: '#016630' } }}>
           Artigos
-        </Link>
-        <Link
+        </Box>
+        <Box component={Link}
           href="/fale-conosco"
-          style={{ textDecoration: 'none', color: theme.palette.grey[700] }}
+          sx={{ textDecoration: 'none', color: theme.palette.grey[700], transition: 'color 0.2s','&:hover': { color: '#016630' }}}
         >
           Fale Conosco
-        </Link>
+        </Box>
       </Box>
 
       <Box>
