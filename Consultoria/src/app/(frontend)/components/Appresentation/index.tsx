@@ -1,6 +1,5 @@
 import { Box, Button, Card, Typography } from '@mui/material'
 import { CircleCheckBig } from 'lucide-react'
-import { Span } from 'next/dist/trace'
 import Image from 'next/image'
 import { TrendingUp } from 'lucide-react'
 import { Users } from 'lucide-react'
@@ -12,13 +11,14 @@ export const Appresentation = () => {
       sx={{
         paddingLeft: 11,
         paddingRight: 11,
-        bgcolor: 'rgba(240, 254, 240)',
+        bgcolor: '#daf3e0ff',
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',
         alignItems: 'center',
         justifyItems: 'center',
         gap: 2,
-        paddingY: 10,
+        paddingBottom: 10,
+        paddingTop: 20,
       }}
     >
       <Box sx={{ paddingX: 4, display: 'flex', flexDirection: 'column', gap: 2 }}>

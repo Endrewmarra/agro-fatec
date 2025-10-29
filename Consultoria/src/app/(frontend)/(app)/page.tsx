@@ -2,10 +2,10 @@ import  '../styles.css'
 
 
 import { Box } from '@mui/material'
-import { Header } from '../components/Header'
 import { getPayload } from 'payload'
 import config from '@payload-config'
 import { Appresentation } from '../components/Appresentation'
+import { Content } from '../components/Content'
 
 
 
@@ -17,6 +17,7 @@ export default async function HomePage() {
     <Box>
 
       <Appresentation />
+      <Content />
       
     </Box>
   )

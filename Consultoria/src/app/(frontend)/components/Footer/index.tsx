@@ -9,8 +9,9 @@ export const Footer = () => {
         width: '100vw',
         paddingX: 15,
         paddingY: 10,
-        backgroundColor: '#0a012dff',
+        backgroundColor: '#1a1727ff',
         zIndex: 1,
+        
       }}
     >
       <Box
@@ -19,6 +20,7 @@ export const Footer = () => {
           gridTemplateColumns: '1fr 1fr 1fr 1fr',
           justifyContent: 'space-between',
           marginBottom: 2,
+          
         }}
       >
         <Box sx={{ display: 'inline', width: '19vw' }}>
@@ -50,22 +52,23 @@ export const Footer = () => {
             Especialistas em consultoria agronômica para milho, soja e sorgo. Transformamos
             conhecimento em resultados práticos para o seu agronegócio.
           </Typography>
-          <Box sx={{display:'grid', gridTemplateColumns: '1fr 1fr 1fr', }}>
+{/* Alinhas as redes sociais */}
+          <Box sx={{display:'flex', justifyItems:'left', }}>
             <Button
             variant="outlined"
-            sx={{ textTransform: 'none', backgroundColor: 'white', borderRadius: 2, scale:0.5, height:70,}}
+            sx={{ textTransform: 'none', backgroundColor: 'white', borderRadius: 4, scale:0.5, height:70,}}
           >
             <Facebook size={'40px'} color='gray'/>
           </Button>
             <Button
             variant="outlined"
-            sx={{ textTransform: 'none', backgroundColor: 'white', borderRadius: 2, scale:0.5, height:70,}}
+            sx={{ textTransform: 'none', backgroundColor: 'white', borderRadius: 4, scale:0.5, height:70,}}
             >
             <Instagram size={'40px'} color='gray'/>
             </Button>
             <Button
             variant="outlined"
-            sx={{ textTransform: 'none', backgroundColor: 'white', borderRadius: 2, scale:0.5, height:70 }}
+            sx={{ textTransform: 'none', backgroundColor: 'white', borderRadius: 4, scale:0.5, height:70 }}
             >
             <Linkedin size={'40px'} color='gray'/>
             </Button>
