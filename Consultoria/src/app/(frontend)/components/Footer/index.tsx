@@ -1,7 +1,6 @@
-import { Box, Typography } from '@mui/material'
-import { Leaf, MapPin, Phone, Mail } from 'lucide-react'
+import { Box, Typography, Button } from '@mui/material'
+import { Leaf, MapPin, Phone, Mail, Facebook, Instagram, Linkedin } from 'lucide-react'
 import Link from 'next/link'
-import { T } from 'vitest/dist/chunks/reporters.d.DL9pg5DB.js'
 
 export const Footer = () => {
   return (
@@ -51,6 +50,26 @@ export const Footer = () => {
             Especialistas em consultoria agronômica para milho, soja e sorgo. Transformamos
             conhecimento em resultados práticos para o seu agronegócio.
           </Typography>
+          <Box sx={{display:'grid', gridTemplateColumns: '1fr 1fr 1fr', }}>
+            <Button
+            variant="outlined"
+            sx={{ textTransform: 'none', backgroundColor: 'white', borderRadius: 2, scale:0.5, height:70,}}
+          >
+            <Facebook size={'40px'} color='gray'/>
+          </Button>
+            <Button
+            variant="outlined"
+            sx={{ textTransform: 'none', backgroundColor: 'white', borderRadius: 2, scale:0.5, height:70,}}
+            >
+            <Instagram size={'40px'} color='gray'/>
+            </Button>
+            <Button
+            variant="outlined"
+            sx={{ textTransform: 'none', backgroundColor: 'white', borderRadius: 2, scale:0.5, height:70 }}
+            >
+            <Linkedin size={'40px'} color='gray'/>
+            </Button>
+          </Box>
         </Box>
         <Box sx={{ color: 'white' }}>
           Nossos Serviços
