@@ -5,7 +5,7 @@ import { Box } from '@mui/material'
 import { getPayload } from 'payload'
 import config from '@payload-config'
 import { Appresentation } from '../components/Appresentation'
-import { Content } from '../components/Content'
+import { Services } from '../components/Services'
 
 
 
@@ -17,7 +17,7 @@ export default async function HomePage() {
     <Box>
 
       <Appresentation />
-      <Content />
+      <Services />
       
     </Box>
   )

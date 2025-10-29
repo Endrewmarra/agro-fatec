@@ -9,6 +9,7 @@ export const Appresentation = () => {
   return (
     <Box
       sx={{
+        width:'100vw',
         paddingLeft: 11,
         paddingRight: 11,
         bgcolor: '#daf3e0ff',
