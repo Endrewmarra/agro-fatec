@@ -36,7 +36,7 @@ export const Services = () => {
           gap: 4,
         }}
       >
-        <Card sx={{ borderRadius: 4 }}>
+        <Card sx={{ borderRadius: 4, }}>
           <CardMedia
             sx={{ '&:hover': { scale: 1.2, transition: '0.2s' }, transition: '0.2s' }}
             component="img"
@@ -46,8 +46,8 @@ export const Services = () => {
           />
           <CardContent>
             <Box>
-              <Typography>Titulo</Typography>
-              <Typography>Descrião</Typography>
+              <Typography>Consultoria em Milho</Typography>
+              <Typography>Maximização da produtividade através de técnicas avançadas de manejo, escolha de variedades e otimização de recursos.</Typography>
             </Box>
             <Box>
               <Typography>Principais Benefícios</Typography>
@@ -70,8 +70,8 @@ export const Services = () => {
           />
           <CardContent>
             <Box>
-              <Typography>Titulo</Typography>
-              <Typography>Descrião</Typography>
+              <Typography>Consultoria em Soja</Typography>
+              <Typography>Estratégias completas para cultivo sustentável de soja, desde o plantio até a colheita, com foco em qualidade e rendimento.</Typography>
             </Box>
             <Box>
               <Typography>Principais Benefícios</Typography>
@@ -93,8 +93,8 @@ export const Services = () => {
           />
           <CardContent>
             <Box>
-              <Typography>Titulo</Typography>
-              <Typography>Descrião</Typography>
+              <Typography>Consultoria em Sorgo</Typography>
+              <Typography>Aproveitamento das características únicas do sorgo para diversificação produtiva e sustentabilidade no agronegócio.</Typography>
             </Box>
             <Box>
               <Typography>Principais Benefícios</Typography>
@@ -107,10 +107,10 @@ export const Services = () => {
           </CardContent>
         </Card>
       </Box>
-      {/* add degrade horizontal */}
+      
       <Box sx={{
         width:'100%',
-        backgroundColor:'#00a63e',
+        backgroundImage:'linear-gradient(to right, #00a63e , #026928ff)',
         color:'white',
         borderRadius:4,
         padding:4,
