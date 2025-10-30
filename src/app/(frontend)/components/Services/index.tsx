@@ -10,7 +10,7 @@ import {
   ListItem,
   ListItemIcon,
 } from '@mui/material'
-import { Dot } from 'lucide-react'
+import { Dot, ArrowRight, Wheat, Sprout,Zap } from 'lucide-react'
 
 export const Services = () => {
   return (
@@ -23,7 +23,7 @@ export const Services = () => {
         textAlign: 'center',
       }}
     >
-      <Box sx={{ backgroundColor: '#daf3e0ff', borderRadius: 2 }}>
+      <Box sx={{ backgroundColor: '#e7ffecff', borderRadius: 2 }}>
         <Typography
           sx={{ paddingY: 0.5, margin: 2, fontSize: 12, color: '#016630', fontWeight: 600 }}
         >
@@ -44,10 +44,14 @@ export const Services = () => {
         sx={{
           display: 'grid',
           gridTemplateColumns: '1fr 1fr 1fr',
-          gap: 4,textAlign:'left'
+          gap: 4,
+          textAlign: 'left',
         }}
       >
-        <Card sx={{ borderRadius: 4, }}>
+        <Card sx={{ borderRadius: 4 }}>
+          <Box sx={{position:'absolute', zIndex:1}}>
+            <Wheat />
+            </Box>
           <CardMedia
             sx={{ '&:hover': { scale: 1.2, transition: '0.2s' }, transition: '0.2s' }}
             component="img"
@@ -55,52 +59,79 @@ export const Services = () => {
             height="200px"
             image="https://images.unsplash.com/photo-1655131468751-c4210f1c4c5e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb3JuJTIwZmllbGQlMjBhZ3JpY3VsdHVyZXxlbnwxfHx8fDE3NTc2MTgwMDd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
           />
-          <CardContent >
-            <Box>
+          <CardContent>
+            <Box sx={{ marginLeft: 1, marginBottom: 6, marginTop: 4 }}>
               <Typography>Consultoria em Milho</Typography>
-              <Typography>
+              <Typography sx={{ fontSize: 16, color: '#585858ff' }}>
                 Maximização da produtividade através de técnicas avançadas de manejo, escolha de
                 variedades e otimização de recursos.
               </Typography>
             </Box>
             <Box>
-              
-              <Typography sx={{fontSize:16, fontWeight:600, marginBottom:-2, marginLeft:1}}>Principais Benefícios:</Typography>
-                <List sx={{color:'#585858ff', fontSize:14,lineHeight:1 }}>
-                  <ListItem >
-                    <ListItemIcon sx={{ scale: 2, marginRight:-5 }}>
-                      <Dot color="#00a63e" />
-                    </ListItemIcon>
-                    Análise de solo especializada
-                  </ListItem>
+              <Typography sx={{ fontSize: 16, fontWeight: 600, marginBottom: -2, marginLeft: 1 }}>
+                Principais Benefícios:
+              </Typography>
+              <List sx={{ color: '#585858ff', fontSize: 14, lineHeight: 1 }}>
+                <ListItem>
+                  <ListItemIcon sx={{ scale: 2, marginRight: -5 }}>
+                    <Dot color="#00a63e" />
+                  </ListItemIcon>
+                  Análise de solo especializada
+                </ListItem>
 
-                  <ListItem>
-                    <ListItemIcon sx={{ scale: 2,marginRight:-5 }}>
-                      <Dot color="#00a63e" />
-                    </ListItemIcon>
-                    Seleção de híbridos
-                  </ListItem>
+                <ListItem>
+                  <ListItemIcon sx={{ scale: 2, marginRight: -5 }}>
+                    <Dot color="#00a63e" />
+                  </ListItemIcon>
+                  Seleção de híbridos
+                </ListItem>
 
-                  <ListItem>
-                    <ListItemIcon sx={{ scale: 2,marginRight:-5 }}>
-                      <Dot color="#00a63e" />
-                    </ListItemIcon>
-                    Manejo integrado de pragas
-                  </ListItem>
+                <ListItem>
+                  <ListItemIcon sx={{ scale: 2, marginRight: -5 }}>
+                    <Dot color="#00a63e" />
+                  </ListItemIcon>
+                  Manejo integrado de pragas
+                </ListItem>
 
-                  <ListItem>
-                    <ListItemIcon sx={{ scale: 2,marginRight:-5 }}>
-                      <Dot color="#00a63e" />
-                    </ListItemIcon>
-                    Otimização de irrigação
-                  </ListItem>
-                </List>
-             
+                <ListItem>
+                  <ListItemIcon sx={{ scale: 2, marginRight: -5 }}>
+                    <Dot color="#00a63e" />
+                  </ListItemIcon>
+                  Otimização de irrigação
+                </ListItem>
+              </List>
             </Box>
-            <Box>
-              <Typography>Aumento médio de 25% na produtividade</Typography>
+            <Box sx={{ textAlign: 'center' }}>
+              <Typography
+                sx={{
+                  backgroundColor: '#e7ffecff',
+                  borderRadius: 2,
+                  color: '#016630',
+                  fontSize: 14,
+                  paddingY: 1,
+                  width: '100%',
+                }}
+              >
+                Aumento médio de 25% na produtividade
+              </Typography>
+              <Button
+                sx={{
+                  width: '100%',
+                  border: '1px solid #00a63e',
+                  color: '#00a63e',
+                  fontSize: 14,
+                  marginTop: 2,
+                  display: 'flex',
+                  gap: 1,
+                  transition: '0.2s',
+                  '&:hover': { gap: 4, transition: '0.2s' },
+                }}
+              >
+                <Typography>Saiba Mais</Typography>
+
+                <ArrowRight alignmentBaseline="middle" />
+              </Button>
             </Box>
-            <Button>Saiba Mais</Button>
           </CardContent>
         </Card>
         <Card sx={{ borderRadius: 4 }}>
@@ -113,52 +144,74 @@ export const Services = () => {
             image="https://images.unsplash.com/photo-1562702076-c719c8796b8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzb3liZWFuJTIwZmFybXxlbnwxfHx8fDE3NTc2MTgzNTd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
           />
           <CardContent>
-            <Box>
+            <Box sx={{ marginLeft: 1, marginBottom: 6, marginTop: 4 }}>
               <Typography>Consultoria em Soja</Typography>
-              <Typography>
+              <Typography sx={{ fontSize: 16, color: '#585858ff' }}>
                 Estratégias completas para cultivo sustentável de soja, desde o plantio até a
                 colheita, com foco em qualidade e rendimento.
               </Typography>
             </Box>
             <Box>
-              
-              <Typography sx={{fontSize:16, fontWeight:600, marginBottom:-2, marginLeft:1}}>Principais Benefícios:</Typography>
-                <List sx={{color:'#585858ff', fontSize:14, lineHeight:1}}>
-                  <ListItem >
-                    <ListItemIcon sx={{ scale: 2, marginRight:-5 }}>
-                      <Dot color="#00a63e" />
-                    </ListItemIcon>
-                    Rotação de culturas
+              <Typography sx={{ fontSize: 16, fontWeight: 600, marginBottom: -2, marginLeft: 1 }}>
+                Principais Benefícios:
+              </Typography>
+              <List sx={{ color: '#585858ff', fontSize: 14, lineHeight: 1 }}>
+                <ListItem>
+                  <ListItemIcon sx={{ scale: 2, marginRight: -5 }}>
+                    <Dot color="#00a63e" />
+                  </ListItemIcon>
+                  Rotação de culturas
+                </ListItem>
 
-                  </ListItem>
+                <ListItem>
+                  <ListItemIcon sx={{ scale: 2, marginRight: -5 }}>
+                    <Dot color="#00a63e" />
+                  </ListItemIcon>
+                  Manejo de resistência
+                </ListItem>
 
-                  <ListItem>
-                    <ListItemIcon sx={{ scale: 2,marginRight:-5 }}>
-                      <Dot color="#00a63e" />
-                    </ListItemIcon>
-                    Manejo de resistência
-                  </ListItem>
+                <ListItem>
+                  <ListItemIcon sx={{ scale: 2, marginRight: -5 }}>
+                    <Dot color="#00a63e" />
+                  </ListItemIcon>
+                  Controle biológico
+                </ListItem>
 
-                  <ListItem>
-                    <ListItemIcon sx={{ scale: 2,marginRight:-5 }}>
-                      <Dot color="#00a63e" />
-                    </ListItemIcon>
-                    Controle biológico
-                  </ListItem>
-
-                  <ListItem>
-                    <ListItemIcon sx={{ scale: 2,marginRight:-5 }}>
-                      <Dot color="#00a63e" />
-                    </ListItemIcon>
-                    Monitoramento de doenças
-                  </ListItem>
-                </List>
-             
+                <ListItem>
+                  <ListItemIcon sx={{ scale: 2, marginRight: -5 }}>
+                    <Dot color="#00a63e" />
+                  </ListItemIcon>
+                  Monitoramento de doenças
+                </ListItem>
+              </List>
             </Box>
-            <Box>
-              <Typography>Redução de 40% nos custos de produção</Typography>
+            <Box sx={{textAlign:'center'}}>
+              <Typography sx={{
+                  backgroundColor: '#e7ffecff',
+                  borderRadius: 2,
+                  color: '#016630',
+                  fontSize: 14,
+                  paddingY: 1,
+                  width: '100%',
+                }}>Redução de 40% nos custos de produção</Typography>
             </Box>
-            <Button>Saiba Mais</Button>
+            <Button
+                sx={{
+                  width: '100%',
+                  border: '1px solid #00a63e',
+                  color: '#00a63e',
+                  fontSize: 14,
+                  marginTop: 2,
+                  display: 'flex',
+                  gap: 1,
+                  transition: '0.2s',
+                  '&:hover': { gap: 4, transition: '0.2s' },
+                }}
+              >
+                <Typography>Saiba Mais</Typography>
+
+                <ArrowRight alignmentBaseline="middle" />
+              </Button>
           </CardContent>
         </Card>
         <Card sx={{ borderRadius: 4 }}>
@@ -170,51 +223,74 @@ export const Services = () => {
             image="https://images.unsplash.com/photo-1581092335878-2d9ff86ca2bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZ3JpY3VsdHVyZSUyMHRlY2hub2xvZ3l8ZW58MXx8fHwxNzU3NjE4MzU4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
           />
           <CardContent>
-            <Box>
+            <Box sx={{ marginLeft: 1, marginBottom: 6, marginTop: 4 }}>
               <Typography>Consultoria em Sorgo</Typography>
-              <Typography>
+              <Typography sx={{ fontSize: 16, color: '#585858ff' }}>
                 Aproveitamento das características únicas do sorgo para diversificação produtiva e
                 sustentabilidade no agronegócio.
               </Typography>
             </Box>
-             <Box>
-              
-              <Typography sx={{fontSize:16, fontWeight:600, marginBottom:-2, marginLeft:1}}>Principais Benefícios:</Typography>
-                <List sx={{color:'#585858ff', fontSize:14,lineHeight:1 }}>
-                  <ListItem >
-                    <ListItemIcon sx={{ scale: 2, marginRight:-5 }}>
-                      <Dot color="#00a63e" />
-                    </ListItemIcon>
-                    Resistência à seca
-                  </ListItem>
-
-                  <ListItem>
-                    <ListItemIcon sx={{ scale: 2,marginRight:-5 }}>
-                      <Dot color="#00a63e" />
-                    </ListItemIcon>
-                    Adaptação climática
-                  </ListItem>
-
-                  <ListItem>
-                    <ListItemIcon sx={{ scale: 2,marginRight:-5 }}>
-                      <Dot color="#00a63e" />
-                    </ListItemIcon>
-                    Uso em biocombustíveis
-                  </ListItem>
-
-                  <ListItem>
-                    <ListItemIcon sx={{ scale: 2,marginRight:-5 }}>
-                      <Dot color="#00a63e" />
-                    </ListItemIcon>
-                    Integração lavoura-pecuária
-                  </ListItem>
-                </List>
-             
-            </Box>
             <Box>
-              <Typography>35% maior resistência à estiagem</Typography>
+              <Typography sx={{ fontSize: 16, fontWeight: 600, marginBottom: -2, marginLeft: 1 }}>
+                Principais Benefícios:
+              </Typography>
+              <List sx={{ color: '#585858ff', fontSize: 14, lineHeight: 1 }}>
+                <ListItem>
+                  <ListItemIcon sx={{ scale: 2, marginRight: -5 }}>
+                    <Dot color="#00a63e" />
+                  </ListItemIcon>
+                  Resistência à seca
+                </ListItem>
+
+                <ListItem>
+                  <ListItemIcon sx={{ scale: 2, marginRight: -5 }}>
+                    <Dot color="#00a63e" />
+                  </ListItemIcon>
+                  Adaptação climática
+                </ListItem>
+
+                <ListItem>
+                  <ListItemIcon sx={{ scale: 2, marginRight: -5 }}>
+                    <Dot color="#00a63e" />
+                  </ListItemIcon>
+                  Uso em biocombustíveis
+                </ListItem>
+
+                <ListItem>
+                  <ListItemIcon sx={{ scale: 2, marginRight: -5 }}>
+                    <Dot color="#00a63e" />
+                  </ListItemIcon>
+                  Integração lavoura-pecuária
+                </ListItem>
+              </List>
             </Box>
-            <Button>Saiba Mais</Button>
+            <Box sx={{textAlign:'center'}}>
+              <Typography sx={{
+                  backgroundColor: '#e7ffecff',
+                  borderRadius: 2,
+                  color: '#016630',
+                  fontSize: 14,
+                  paddingY: 1,
+                  width: '100%',
+                }}>35% maior resistência à estiagem</Typography>
+            </Box>
+            <Button
+                sx={{
+                  width: '100%',
+                  border: '1px solid #00a63e',
+                  color: '#00a63e',
+                  fontSize: 14,
+                  marginTop: 2,
+                  display: 'flex',
+                  gap: 1,
+                  transition: '0.2s',
+                  '&:hover': { gap: 4, transition: '0.2s' },
+                }}
+              >
+                <Typography>Saiba Mais</Typography>
+
+                <ArrowRight alignmentBaseline="middle" />
+              </Button>
           </CardContent>
         </Card>
       </Box>

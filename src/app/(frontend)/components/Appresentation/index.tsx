@@ -12,7 +12,7 @@ export const Appresentation = () => {
         width:'100vw',
         paddingLeft: 11,
         paddingRight: 11,
-        bgcolor: '#daf3e0ff',
+        bgcolor: '#e7ffecff',
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',
         alignItems: 'center',
