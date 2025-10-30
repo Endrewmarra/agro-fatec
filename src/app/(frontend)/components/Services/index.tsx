@@ -1,5 +1,16 @@
-import { Box, Typography, Card, CardActions, CardContent, CardMedia, Button } from '@mui/material'
-import { Scale } from 'lucide-react'
+import {
+  Box,
+  Typography,
+  Card,
+  CardActions,
+  CardContent,
+  CardMedia,
+  Button,
+  List,
+  ListItem,
+  ListItemIcon,
+} from '@mui/material'
+import { Dot } from 'lucide-react'
 
 export const Services = () => {
   return (
@@ -33,7 +44,7 @@ export const Services = () => {
         sx={{
           display: 'grid',
           gridTemplateColumns: '1fr 1fr 1fr',
-          gap: 4,
+          gap: 4,textAlign:'left'
         }}
       >
         <Card sx={{ borderRadius: 4, }}>
@@ -44,14 +55,47 @@ export const Services = () => {
             height="200px"
             image="https://images.unsplash.com/photo-1655131468751-c4210f1c4c5e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb3JuJTIwZmllbGQlMjBhZ3JpY3VsdHVyZXxlbnwxfHx8fDE3NTc2MTgwMDd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
           />
-          <CardContent>
+          <CardContent >
             <Box>
               <Typography>Consultoria em Milho</Typography>
-              <Typography>Maximização da produtividade através de técnicas avançadas de manejo, escolha de variedades e otimização de recursos.</Typography>
+              <Typography>
+                Maximização da produtividade através de técnicas avançadas de manejo, escolha de
+                variedades e otimização de recursos.
+              </Typography>
             </Box>
             <Box>
-              <Typography>Principais Benefícios</Typography>
-              <Typography>lista</Typography>
+              
+              <Typography sx={{fontSize:16, fontWeight:600, marginBottom:-2, marginLeft:1}}>Principais Benefícios:</Typography>
+                <List sx={{color:'#585858ff', fontSize:14,lineHeight:1 }}>
+                  <ListItem >
+                    <ListItemIcon sx={{ scale: 2, marginRight:-5 }}>
+                      <Dot color="#00a63e" />
+                    </ListItemIcon>
+                    Análise de solo especializada
+                  </ListItem>
+
+                  <ListItem>
+                    <ListItemIcon sx={{ scale: 2,marginRight:-5 }}>
+                      <Dot color="#00a63e" />
+                    </ListItemIcon>
+                    Seleção de híbridos
+                  </ListItem>
+
+                  <ListItem>
+                    <ListItemIcon sx={{ scale: 2,marginRight:-5 }}>
+                      <Dot color="#00a63e" />
+                    </ListItemIcon>
+                    Manejo integrado de pragas
+                  </ListItem>
+
+                  <ListItem>
+                    <ListItemIcon sx={{ scale: 2,marginRight:-5 }}>
+                      <Dot color="#00a63e" />
+                    </ListItemIcon>
+                    Otimização de irrigação
+                  </ListItem>
+                </List>
+             
             </Box>
             <Box>
               <Typography>Aumento médio de 25% na produtividade</Typography>
@@ -71,11 +115,45 @@ export const Services = () => {
           <CardContent>
             <Box>
               <Typography>Consultoria em Soja</Typography>
-              <Typography>Estratégias completas para cultivo sustentável de soja, desde o plantio até a colheita, com foco em qualidade e rendimento.</Typography>
+              <Typography>
+                Estratégias completas para cultivo sustentável de soja, desde o plantio até a
+                colheita, com foco em qualidade e rendimento.
+              </Typography>
             </Box>
             <Box>
-              <Typography>Principais Benefícios</Typography>
-              <Typography>lista</Typography>
+              
+              <Typography sx={{fontSize:16, fontWeight:600, marginBottom:-2, marginLeft:1}}>Principais Benefícios:</Typography>
+                <List sx={{color:'#585858ff', fontSize:14, lineHeight:1}}>
+                  <ListItem >
+                    <ListItemIcon sx={{ scale: 2, marginRight:-5 }}>
+                      <Dot color="#00a63e" />
+                    </ListItemIcon>
+                    Rotação de culturas
+
+                  </ListItem>
+
+                  <ListItem>
+                    <ListItemIcon sx={{ scale: 2,marginRight:-5 }}>
+                      <Dot color="#00a63e" />
+                    </ListItemIcon>
+                    Manejo de resistência
+                  </ListItem>
+
+                  <ListItem>
+                    <ListItemIcon sx={{ scale: 2,marginRight:-5 }}>
+                      <Dot color="#00a63e" />
+                    </ListItemIcon>
+                    Controle biológico
+                  </ListItem>
+
+                  <ListItem>
+                    <ListItemIcon sx={{ scale: 2,marginRight:-5 }}>
+                      <Dot color="#00a63e" />
+                    </ListItemIcon>
+                    Monitoramento de doenças
+                  </ListItem>
+                </List>
+             
             </Box>
             <Box>
               <Typography>Redução de 40% nos custos de produção</Typography>
@@ -94,11 +172,44 @@ export const Services = () => {
           <CardContent>
             <Box>
               <Typography>Consultoria em Sorgo</Typography>
-              <Typography>Aproveitamento das características únicas do sorgo para diversificação produtiva e sustentabilidade no agronegócio.</Typography>
+              <Typography>
+                Aproveitamento das características únicas do sorgo para diversificação produtiva e
+                sustentabilidade no agronegócio.
+              </Typography>
             </Box>
-            <Box>
-              <Typography>Principais Benefícios</Typography>
-              <Typography>lista</Typography>
+             <Box>
+              
+              <Typography sx={{fontSize:16, fontWeight:600, marginBottom:-2, marginLeft:1}}>Principais Benefícios:</Typography>
+                <List sx={{color:'#585858ff', fontSize:14,lineHeight:1 }}>
+                  <ListItem >
+                    <ListItemIcon sx={{ scale: 2, marginRight:-5 }}>
+                      <Dot color="#00a63e" />
+                    </ListItemIcon>
+                    Resistência à seca
+                  </ListItem>
+
+                  <ListItem>
+                    <ListItemIcon sx={{ scale: 2,marginRight:-5 }}>
+                      <Dot color="#00a63e" />
+                    </ListItemIcon>
+                    Adaptação climática
+                  </ListItem>
+
+                  <ListItem>
+                    <ListItemIcon sx={{ scale: 2,marginRight:-5 }}>
+                      <Dot color="#00a63e" />
+                    </ListItemIcon>
+                    Uso em biocombustíveis
+                  </ListItem>
+
+                  <ListItem>
+                    <ListItemIcon sx={{ scale: 2,marginRight:-5 }}>
+                      <Dot color="#00a63e" />
+                    </ListItemIcon>
+                    Integração lavoura-pecuária
+                  </ListItem>
+                </List>
+             
             </Box>
             <Box>
               <Typography>35% maior resistência à estiagem</Typography>
@@ -107,18 +218,38 @@ export const Services = () => {
           </CardContent>
         </Card>
       </Box>
-      
-      <Box sx={{
-        width:'100%',
-        backgroundImage:'linear-gradient(to right, #00a63e , #026928ff)',
-        color:'white',
-        borderRadius:4,
-        padding:4,
-        marginTop:4,
-      }}>
-        <Typography sx={{fontSize:22, fontWeight:600,margin:2}}>Pronto para Revolucionar sua Produção?</Typography>
-        <Typography sx={{fontSize:16,paddingX:30}}>Nossa equipe de especialistas está pronta para analisar sua propriedade e desenvolver estratégias personalizadas para maximizar seus resultados.</Typography>
-        <Button variant='outlined' sx={{backgroundColor:'white',color:'#00a63e', margin:2,fontSize:12,fontWeight:600,padding:1,borderRadius:2}}>Agendar Consultoria Gratuita</Button>
+
+      <Box
+        sx={{
+          width: '100%',
+          backgroundImage: 'linear-gradient(to right, #00a63e , #026928ff)',
+          color: 'white',
+          borderRadius: 4,
+          padding: 4,
+          marginTop: 4,
+        }}
+      >
+        <Typography sx={{ fontSize: 22, fontWeight: 600, margin: 2 }}>
+          Pronto para Revolucionar sua Produção?
+        </Typography>
+        <Typography sx={{ fontSize: 16, paddingX: 30 }}>
+          Nossa equipe de especialistas está pronta para analisar sua propriedade e desenvolver
+          estratégias personalizadas para maximizar seus resultados.
+        </Typography>
+        <Button
+          variant="outlined"
+          sx={{
+            backgroundColor: 'white',
+            color: '#00a63e',
+            margin: 2,
+            fontSize: 12,
+            fontWeight: 600,
+            padding: 1,
+            borderRadius: 2,
+          }}
+        >
+          Agendar Consultoria Gratuita
+        </Button>
       </Box>
     </Box>
   )
