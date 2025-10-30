@@ -2,7 +2,6 @@ import {
   Box,
   Typography,
   Card,
-  CardActions,
   CardContent,
   CardMedia,
   Button,
@@ -10,7 +9,7 @@ import {
   ListItem,
   ListItemIcon,
 } from '@mui/material'
-import { Dot, ArrowRight, Wheat, Sprout,Zap } from 'lucide-react'
+import { Dot, ArrowRight, Wheat, Sprout, Zap } from 'lucide-react'
 
 export const Services = () => {
   return (
@@ -39,7 +38,7 @@ export const Services = () => {
           soluções personalizadas para cada cultura.
         </Typography>
       </Box>
-      {/* add estilo nos cars */}
+
       <Box
         sx={{
           display: 'grid',
@@ -49,21 +48,23 @@ export const Services = () => {
         }}
       >
         <Card sx={{ borderRadius: 4 }}>
-          <Box sx={{
-            backgroundColor: 'white',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            width: 40,
-            height: 40,
-            borderRadius: 2,
-            position:'absolute',
-            zIndex:1,
-            margin:3,
-            scale:1.3
-          }}>
-            <Wheat color='#00a63e' />
-            </Box>
+          <Box
+            sx={{
+              backgroundColor: 'white',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              width: 40,
+              height: 40,
+              borderRadius: 2,
+              position: 'absolute',
+              zIndex: 1,
+              margin: 3,
+              scale: 1.3,
+            }}
+          >
+            <Wheat color="#00a63e" />
+          </Box>
           <CardMedia
             sx={{ '&:hover': { scale: 1.1, transition: '0.2s' }, transition: '0.2s' }}
             component="img"
@@ -147,21 +148,23 @@ export const Services = () => {
           </CardContent>
         </Card>
         <Card sx={{ borderRadius: 4 }}>
-          <Box sx={{
-            backgroundColor: 'white',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            width: 40,
-            height: 40,
-            borderRadius: 2,
-            position:'absolute',
-            zIndex:1,
-            margin:3,
-            scale:1.3
-          }}>
-            <Sprout color='#00a63e' />
-            </Box>
+          <Box
+            sx={{
+              backgroundColor: 'white',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              width: 40,
+              height: 40,
+              borderRadius: 2,
+              position: 'absolute',
+              zIndex: 1,
+              margin: 3,
+              scale: 1.3,
+            }}
+          >
+            <Sprout color="#00a63e" />
+          </Box>
           <CardMedia
             sx={{ '&:hover': { scale: 1.1, transition: '0.2s' }, transition: '0.2s' }}
             component="img"
@@ -212,51 +215,57 @@ export const Services = () => {
                 </ListItem>
               </List>
             </Box>
-            <Box sx={{textAlign:'center'}}>
-              <Typography sx={{
+            <Box sx={{ textAlign: 'center' }}>
+              <Typography
+                sx={{
                   backgroundColor: '#e7ffecff',
                   borderRadius: 2,
                   color: '#016630',
                   fontSize: 14,
                   paddingY: 1,
                   width: '100%',
-                }}>Redução de 40% nos custos de produção</Typography>
-            </Box>
-            <Button
-                sx={{
-                  width: '100%',
-                  border: '1px solid #00a63e',
-                  color: '#00a63e',
-                  fontSize: 14,
-                  marginTop: 2,
-                  display: 'flex',
-                  gap: 1,
-                  transition: '0.2s',
-                  '&:hover': { gap: 4, transition: '0.2s' },
                 }}
               >
-                <Typography>Saiba Mais</Typography>
+                Redução de 40% nos custos de produção
+              </Typography>
+            </Box>
+            <Button
+              sx={{
+                width: '100%',
+                border: '1px solid #00a63e',
+                color: '#00a63e',
+                fontSize: 14,
+                marginTop: 2,
+                display: 'flex',
+                gap: 1,
+                transition: '0.2s',
+                '&:hover': { gap: 4, transition: '0.2s' },
+              }}
+            >
+              <Typography>Saiba Mais</Typography>
 
-                <ArrowRight alignmentBaseline="middle" />
-              </Button>
+              <ArrowRight alignmentBaseline="middle" />
+            </Button>
           </CardContent>
         </Card>
         <Card sx={{ borderRadius: 4 }}>
-          <Box sx={{
-            backgroundColor: 'white',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            width: 40,
-            height: 40,
-            borderRadius: 2,
-            position:'absolute',
-            zIndex:1,
-            margin:3,
-            scale:1.3
-          }}>
-            <Zap color='#00a63e' />
-            </Box>
+          <Box
+            sx={{
+              backgroundColor: 'white',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              width: 40,
+              height: 40,
+              borderRadius: 2,
+              position: 'absolute',
+              zIndex: 1,
+              margin: 3,
+              scale: 1.3,
+            }}
+          >
+            <Zap color="#00a63e" />
+          </Box>
           <CardMedia
             sx={{ '&:hover': { scale: 1.1, transition: '0.2s' }, transition: '0.2s' }}
             component="img"
@@ -306,33 +315,37 @@ export const Services = () => {
                 </ListItem>
               </List>
             </Box>
-            <Box sx={{textAlign:'center'}}>
-              <Typography sx={{
+            <Box sx={{ textAlign: 'center' }}>
+              <Typography
+                sx={{
                   backgroundColor: '#e7ffecff',
                   borderRadius: 2,
                   color: '#016630',
                   fontSize: 14,
                   paddingY: 1,
                   width: '100%',
-                }}>35% maior resistência à estiagem</Typography>
-            </Box>
-            <Button
-                sx={{
-                  width: '100%',
-                  border: '1px solid #00a63e',
-                  color: '#00a63e',
-                  fontSize: 14,
-                  marginTop: 2,
-                  display: 'flex',
-                  gap: 1,
-                  transition: '0.2s',
-                  '&:hover': { gap: 4, transition: '0.2s' },
                 }}
               >
-                <Typography>Saiba Mais</Typography>
+                35% maior resistência à estiagem
+              </Typography>
+            </Box>
+            <Button
+              sx={{
+                width: '100%',
+                border: '1px solid #00a63e',
+                color: '#00a63e',
+                fontSize: 14,
+                marginTop: 2,
+                display: 'flex',
+                gap: 1,
+                transition: '0.2s',
+                '&:hover': { gap: 4, transition: '0.2s' },
+              }}
+            >
+              <Typography>Saiba Mais</Typography>
 
-                <ArrowRight alignmentBaseline="middle" />
-              </Button>
+              <ArrowRight alignmentBaseline="middle" />
+            </Button>
           </CardContent>
         </Card>
       </Box>
