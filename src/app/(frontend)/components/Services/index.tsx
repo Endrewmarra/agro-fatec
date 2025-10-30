@@ -49,11 +49,23 @@ export const Services = () => {
         }}
       >
         <Card sx={{ borderRadius: 4 }}>
-          <Box sx={{position:'absolute', zIndex:1}}>
-            <Wheat />
+          <Box sx={{
+            backgroundColor: 'white',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            width: 40,
+            height: 40,
+            borderRadius: 2,
+            position:'absolute',
+            zIndex:1,
+            margin:3,
+            scale:1.3
+          }}>
+            <Wheat color='#00a63e' />
             </Box>
           <CardMedia
-            sx={{ '&:hover': { scale: 1.2, transition: '0.2s' }, transition: '0.2s' }}
+            sx={{ '&:hover': { scale: 1.1, transition: '0.2s' }, transition: '0.2s' }}
             component="img"
             alt="Plantação de Milho"
             height="200px"
@@ -135,8 +147,23 @@ export const Services = () => {
           </CardContent>
         </Card>
         <Card sx={{ borderRadius: 4 }}>
+          <Box sx={{
+            backgroundColor: 'white',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            width: 40,
+            height: 40,
+            borderRadius: 2,
+            position:'absolute',
+            zIndex:1,
+            margin:3,
+            scale:1.3
+          }}>
+            <Sprout color='#00a63e' />
+            </Box>
           <CardMedia
-            sx={{ '&:hover': { scale: 1.2, transition: '0.2s' }, transition: '0.2s' }}
+            sx={{ '&:hover': { scale: 1.1, transition: '0.2s' }, transition: '0.2s' }}
             component="img"
             alt="Plantação de Soja"
             height="200px"
@@ -215,8 +242,23 @@ export const Services = () => {
           </CardContent>
         </Card>
         <Card sx={{ borderRadius: 4 }}>
+          <Box sx={{
+            backgroundColor: 'white',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            width: 40,
+            height: 40,
+            borderRadius: 2,
+            position:'absolute',
+            zIndex:1,
+            margin:3,
+            scale:1.3
+          }}>
+            <Zap color='#00a63e' />
+            </Box>
           <CardMedia
-            sx={{ '&:hover': { scale: 1.2, transition: '0.2s' }, transition: '0.2s' }}
+            sx={{ '&:hover': { scale: 1.1, transition: '0.2s' }, transition: '0.2s' }}
             component="img"
             alt="Plantação de Sorgo"
             height="200px"

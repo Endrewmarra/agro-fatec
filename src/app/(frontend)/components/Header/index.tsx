@@ -17,7 +17,7 @@ export const Header = () => {
         paddingY: 2,
         position: 'fixed',
         backgroundColor: 'white',
-        zIndex: 1,
+        zIndex: 2,
         borderBottom: '1px solid #dededeff',
       }}
     >
