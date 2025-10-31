@@ -1,29 +1,7 @@
-'use client'
-
 import { Box, Typography, Card, List, ListItem, ListItemIcon, ListItemText } from '@mui/material'
 import { Lightbulb, Shield, Target, Users, Dot } from 'lucide-react'
-import { useEffect, useState } from 'react' 
-import { getSiteMetrics } from '@/lib/getSiteMetrics'
 
 export const About = () => {
-  const [metrics, setMetrics] = useState({
-    properties_served: 0,
-    increased_productivity: 0,
-    customer_satisfication: 0,
-  })
-
-  useEffect(() => {
-    const fetchMetrics = async () => {
-      try {
-        const data = await getSiteMetrics()
-        setMetrics(data)
-      } catch (error) {
-        console.error('Erro ao buscar métricas:', error)
-      }
-    }
-    fetchMetrics()
-  }, [])
-
   return (
     <Box
       sx={{
@@ -42,7 +20,6 @@ export const About = () => {
           Sobre a AgroConsult
         </Typography>
       </Box>
-
       <Box sx={{ marginBottom: 8 }}>
         <Typography sx={{ fontSize: 36, fontWeight: 'bold', marginBottom: 2 }}>
           Liderança em Consultoria Agronômica
@@ -65,12 +42,9 @@ export const About = () => {
             height: '150px',
           }}
         >
-          <Box sx={{ fontSize: '2rem', fontWeight: 500 }}>
-            {metrics.properties_served}+
-          </Box>
+          <Box sx={{ fontSize: '2rem', fontWeight: 500 }}> 500+ </Box>
           <Typography sx={{ fontSize: 14, color: '#717171ff' }}>Propriedades Atendidas</Typography>
         </Card>
-
         <Card
           sx={{
             paddingX: 6,
@@ -81,10 +55,9 @@ export const About = () => {
             height: '150px',
           }}
         >
-          <Box sx={{ fontSize: '2rem', fontWeight: 500 }}>15</Box>
+          <Box sx={{ fontSize: '2rem', fontWeight: 500 }}> 15 </Box>
           <Typography sx={{ fontSize: 14, color: '#717171ff' }}>Anos de Experiência</Typography>
         </Card>
-
         <Card
           sx={{
             paddingX: 6,
@@ -95,14 +68,11 @@ export const About = () => {
             height: '150px',
           }}
         >
-          <Box sx={{ fontSize: '2rem', fontWeight: 500 }}>
-            {metrics.increased_productivity}%
-          </Box>
+          <Box sx={{ fontSize: '2rem', fontWeight: 500 }}> 30% </Box>
           <Typography sx={{ fontSize: 14, color: '#717171ff' }}>
             Aumento Médio de Produtividade
           </Typography>
         </Card>
-
         <Card
           sx={{
             paddingX: 6,
@@ -113,18 +83,35 @@ export const About = () => {
             height: '150px',
           }}
         >
-          <Box sx={{ fontSize: '2rem', fontWeight: 500 }}>
-            {metrics.customer_satisfication}%
-          </Box>
+          <Box sx={{ fontSize: '2rem', fontWeight: 500 }}> 98% </Box>
           <Typography sx={{ fontSize: 14, color: '#717171ff' }}>Satisfação dos Clientes</Typography>
         </Card>
       </Box>
 
-      {/* O restante do JSX (cards e lista) permanece exatamente igual */}
       <Box sx={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', gap: 3, marginTop: 6 }}>
-        {/* Cards extras */}
-        <Card sx={{ textAlign: 'left', paddingX: 2, paddingY: 2, borderRadius: 3, boxShadow: 3, color: '#00a63e' }}>
-          <Box sx={{ backgroundColor: '#e7ffecff', display: 'flex', alignItems: 'center', justifyContent: 'center', width: 40, height: 40, borderRadius: 2 }}>
+        <Card
+          sx={{
+            textAlign: 'left',
+            paddingX: 2,
+            paddingY: 2,
+            borderRadius: 3,
+            boxShadow: 3,
+            color: '#00a63e',
+          }}
+        >
+          <Box
+            sx={{
+              backgroundColor: '#e7ffecff',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              width: 40,
+              height: 40,
+              borderRadius: 2,
+              transition: '0,2s',
+              '&:hover': { backgroundColor: '#abd5b4ff', transition: '0.2s' },
+            }}
+          >
             <Target color="#00a63e" />
           </Box>
           <Typography sx={{ fontSize: 16, color: '#000', fontWeight: 500, marginY: 2 }}>
@@ -134,37 +121,98 @@ export const About = () => {
             Mais de 15 anos transformando propriedades rurais em negócios altamente produtivos.
           </Typography>
         </Card>
-
-        <Card sx={{ textAlign: 'left', paddingX: 2, paddingY: 2, borderRadius: 3, boxShadow: 3, color: '#00a63e' }}>
-          <Box sx={{ backgroundColor: '#e7ffecff', display: 'flex', alignItems: 'center', justifyContent: 'center', width: 40, height: 40, borderRadius: 2 }}>
+        <Card
+          sx={{
+            textAlign: 'left',
+            paddingX: 2,
+            paddingY: 2,
+            borderRadius: 3,
+            boxShadow: 3,
+            color: '#00a63e',
+          }}
+        >
+          <Box
+            sx={{
+              backgroundColor: '#e7ffecff',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              width: 40,
+              height: 40,
+              borderRadius: 2,
+              transition: '0,2s',
+              '&:hover': { backgroundColor: '#abd5b4ff', transition: '0.2s' },
+            }}
+          >
             <Lightbulb color="#00a63e" />
           </Box>
           <Typography sx={{ fontSize: 16, color: '#000', fontWeight: 500, marginY: 2 }}>
-            Soluções Inovadoras
+            Resultados Comprovados
           </Typography>
           <Typography sx={{ fontSize: 14, color: '#575757ff', fontWeight: 400 }}>
             Mais de 15 anos transformando propriedades rurais em negócios altamente produtivos.
           </Typography>
         </Card>
-
-        <Card sx={{ textAlign: 'left', paddingX: 2, paddingY: 2, borderRadius: 3, boxShadow: 3, color: '#00a63e' }}>
-          <Box sx={{ backgroundColor: '#e7ffecff', display: 'flex', alignItems: 'center', justifyContent: 'center', width: 40, height: 40, borderRadius: 2 }}>
+        <Card
+          sx={{
+            textAlign: 'left',
+            paddingX: 2,
+            paddingY: 2,
+            borderRadius: 3,
+            boxShadow: 3,
+            color: '#00a63e',
+          }}
+        >
+          <Box
+            sx={{
+              backgroundColor: '#e7ffecff',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              width: 40,
+              height: 40,
+              borderRadius: 2,
+              transition: '0,2s',
+              '&:hover': { backgroundColor: '#abd5b4ff', transition: '0.2s' },
+            }}
+          >
             <Shield color="#00a63e" />
           </Box>
           <Typography sx={{ fontSize: 16, color: '#000', fontWeight: 500, marginY: 2 }}>
-            Compromisso com a Qualidade
+            Resultados Comprovados
           </Typography>
           <Typography sx={{ fontSize: 14, color: '#575757ff', fontWeight: 400 }}>
             Mais de 15 anos transformando propriedades rurais em negócios altamente produtivos.
           </Typography>
         </Card>
 
-        <Card sx={{ textAlign: 'left', paddingX: 2, paddingY: 2, borderRadius: 3, boxShadow: 3, color: '#00a63e' }}>
-          <Box sx={{ backgroundColor: '#e7ffecff', display: 'flex', alignItems: 'center', justifyContent: 'center', width: 40, height: 40, borderRadius: 2 }}>
+        <Card
+          sx={{
+            textAlign: 'left',
+            paddingX: 2,
+            paddingY: 2,
+            borderRadius: 3,
+            boxShadow: 3,
+            color: '#00a63e',
+          }}
+        >
+          <Box
+            sx={{
+              backgroundColor: '#e7ffecff',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              width: 40,
+              height: 40,
+              borderRadius: 2,
+              transition: '0,2s',
+              '&:hover': { backgroundColor: '#abd5b4ff', transition: '0.2s' },
+            }}
+          >
             <Users color="#00a63e" />
           </Box>
           <Typography sx={{ fontSize: 16, color: '#000', fontWeight: 500, marginY: 2 }}>
-            Parceria com o Produtor
+            Resultados Comprovados
           </Typography>
           <Typography sx={{ fontSize: 14, color: '#575757ff', fontWeight: 400 }}>
             Mais de 15 anos transformando propriedades rurais em negócios altamente produtivos.
@@ -172,7 +220,6 @@ export const About = () => {
         </Card>
       </Box>
 
-      {/* Lista de especialistas */}
       <Box sx={{ display: 'grid', gridTemplateColumns: '1fr 1fr', marginY: 6 }}>
         <Box sx={{ textAlign: 'left', width: '100%', paddingRight: 2 }}>
           <Typography sx={{ color: '#000', fontSize: 20, fontWeight: 600 }}>
