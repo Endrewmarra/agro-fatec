@@ -1,5 +1,5 @@
-import { Box, Typography, Card } from '@mui/material'
-import { Lightbulb, Shield, Target, Users } from 'lucide-react'
+import { Box, Typography, Card, List, ListItem, ListItemIcon, ListItemText } from '@mui/material'
+import { Lightbulb, Shield, Target, Users, Dot } from 'lucide-react'
 
 export const About = () => {
   return (
@@ -217,6 +217,50 @@ export const About = () => {
             Mais de 15 anos transformando propriedades rurais em negócios altamente produtivos.
           </Typography>
         </Card>
+      </Box>
+      <Box sx={{ display: 'grid', gridTemplateColumns: '1fr 1fr', marginY: 6 }}>
+        <Box sx={{ textAlign: 'left', width: '100%', paddingRight: 2 }}>
+          <Typography sx={{ color: '#000', fontSize: 20, fontWeight: 600 }}>
+            Nossa Equipe de Especialistas
+          </Typography>
+          <Typography sx={{ color: '#575757ff', fontSize: 16, fontWeight: 500 }}>
+            Contamos com uma equipe multidisciplinar de engenheiros agrônomos, especialistas em
+            solos, entomologistas e consultores em agronegócio. Cada membro da nossa equipe possui
+            vasta experiência prática e conhecimento científico atualizado.
+          </Typography>
+          <List sx={{ color: '#000',}}>
+            <ListItem sx={{marginY:-2}}>
+              <ListItemIcon sx={{ scale: 2, marginRight: -5 }}>
+                <Dot color="#00a63e" />
+              </ListItemIcon>
+              <ListItemText
+                sx={{ scale: 0.85, marginLeft: -5, marginTop: 3 }}
+                primary="Formação Acadêmica Sólida"
+                secondary="Mestres e doutores das melhores universidades do país"
+              />
+            </ListItem>
+            <ListItem sx={{marginY:-4}}>
+              <ListItemIcon sx={{ scale: 2, marginRight: -5 }}>
+                <Dot color="#00a63e" />
+              </ListItemIcon>
+              <ListItemText
+                sx={{ scale: 0.85, marginLeft: -5, marginTop: 3 }}
+                primary="Experiência Prática"
+                secondary="Mais de uma década trabalhando diretamente no campo"
+              />
+            </ListItem>
+            <ListItem sx={{marginY:-4}}>
+              <ListItemIcon sx={{ scale: 2, marginRight: -5 }}>
+                <Dot color="#00a63e" />
+              </ListItemIcon>
+              <ListItemText
+                sx={{ scale: 0.85, marginLeft: -5, marginTop: 3 }}
+                primary="Atualização Constante"
+                secondary="Participação em congressos e pesquisas internacionais"
+              />
+            </ListItem>
+          </List>
+        </Box>
       </Box>
     </Box>
   )
