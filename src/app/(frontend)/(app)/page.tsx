@@ -16,12 +16,9 @@ export default async function HomePage() {
 
   return (
     <Box>
-
       <Appresentation />
       <Services />
       <About />
-
-      
     </Box>
   )
 }

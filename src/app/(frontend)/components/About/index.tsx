@@ -1,8 +1,17 @@
 'use client'
 
-import { Box, Typography, Card, List, ListItem, ListItemIcon, ListItemText } from '@mui/material'
-import { Lightbulb, Shield, Target, Users, Dot } from 'lucide-react'
-import { useEffect, useState } from 'react' 
+import {
+  Box,
+  Typography,
+  Card,
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
+  Button,
+} from '@mui/material'
+import { Lightbulb, Shield, Target, Users, Dot, ArrowRight, Scale } from 'lucide-react'
+import { useEffect, useState } from 'react'
 import { getSiteMetrics } from '@/lib/getSiteMetrics'
 
 export const About = () => {
@@ -65,9 +74,7 @@ export const About = () => {
             height: '150px',
           }}
         >
-          <Box sx={{ fontSize: '2rem', fontWeight: 500 }}>
-            {metrics.properties_served}+
-          </Box>
+          <Box sx={{ fontSize: '2rem', fontWeight: 500 }}>{metrics.properties_served}+</Box>
           <Typography sx={{ fontSize: 14, color: '#717171ff' }}>Propriedades Atendidas</Typography>
         </Card>
 
@@ -95,9 +102,7 @@ export const About = () => {
             height: '150px',
           }}
         >
-          <Box sx={{ fontSize: '2rem', fontWeight: 500 }}>
-            {metrics.increased_productivity}%
-          </Box>
+          <Box sx={{ fontSize: '2rem', fontWeight: 500 }}>{metrics.increased_productivity}%</Box>
           <Typography sx={{ fontSize: 14, color: '#717171ff' }}>
             Aumento Médio de Produtividade
           </Typography>
@@ -113,18 +118,26 @@ export const About = () => {
             height: '150px',
           }}
         >
-          <Box sx={{ fontSize: '2rem', fontWeight: 500 }}>
-            {metrics.customer_satisfication}%
-          </Box>
+          <Box sx={{ fontSize: '2rem', fontWeight: 500 }}>{metrics.customer_satisfication}%</Box>
           <Typography sx={{ fontSize: 14, color: '#717171ff' }}>Satisfação dos Clientes</Typography>
         </Card>
       </Box>
 
-      {/* O restante do JSX (cards e lista) permanece exatamente igual */}
       <Box sx={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', gap: 3, marginTop: 6 }}>
-        {/* Cards extras */}
-        <Card sx={{ textAlign: 'left', paddingX: 2, paddingY: 2, borderRadius: 3, boxShadow: 3, color: '#00a63e' }}>
-          <Box sx={{ backgroundColor: '#e7ffecff', display: 'flex', alignItems: 'center', justifyContent: 'center', width: 40, height: 40, borderRadius: 2 }}>
+        <Card sx={{ textAlign: 'left', paddingX: 2, paddingY: 2, borderRadius: 3, boxShadow: 3 }}>
+          <Box
+            sx={{
+              backgroundColor: '#e7ffecff',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              width: 40,
+              height: 40,
+              borderRadius: 2,
+              transition: '0,2s',
+              '&:hover': { backgroundColor: '#abd5b4ff', transition: '0.2s' },
+            }}
+          >
             <Target color="#00a63e" />
           </Box>
           <Typography sx={{ fontSize: 16, color: '#000', fontWeight: 500, marginY: 2 }}>
@@ -135,8 +148,20 @@ export const About = () => {
           </Typography>
         </Card>
 
-        <Card sx={{ textAlign: 'left', paddingX: 2, paddingY: 2, borderRadius: 3, boxShadow: 3, color: '#00a63e' }}>
-          <Box sx={{ backgroundColor: '#e7ffecff', display: 'flex', alignItems: 'center', justifyContent: 'center', width: 40, height: 40, borderRadius: 2 }}>
+        <Card sx={{ textAlign: 'left', paddingX: 2, paddingY: 2, borderRadius: 3, boxShadow: 3 }}>
+          <Box
+            sx={{
+              backgroundColor: '#e7ffecff',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              width: 40,
+              height: 40,
+              borderRadius: 2,
+              transition: '0,2s',
+              '&:hover': { backgroundColor: '#abd5b4ff', transition: '0.2s' },
+            }}
+          >
             <Lightbulb color="#00a63e" />
           </Box>
           <Typography sx={{ fontSize: 16, color: '#000', fontWeight: 500, marginY: 2 }}>
@@ -147,8 +172,20 @@ export const About = () => {
           </Typography>
         </Card>
 
-        <Card sx={{ textAlign: 'left', paddingX: 2, paddingY: 2, borderRadius: 3, boxShadow: 3, color: '#00a63e' }}>
-          <Box sx={{ backgroundColor: '#e7ffecff', display: 'flex', alignItems: 'center', justifyContent: 'center', width: 40, height: 40, borderRadius: 2 }}>
+        <Card sx={{ textAlign: 'left', paddingX: 2, paddingY: 2, borderRadius: 3, boxShadow: 3 }}>
+          <Box
+            sx={{
+              backgroundColor: '#e7ffecff',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              width: 40,
+              height: 40,
+              borderRadius: 2,
+              transition: '0,2s',
+              '&:hover': { backgroundColor: '#abd5b4ff', transition: '0.2s' },
+            }}
+          >
             <Shield color="#00a63e" />
           </Box>
           <Typography sx={{ fontSize: 16, color: '#000', fontWeight: 500, marginY: 2 }}>
@@ -159,8 +196,20 @@ export const About = () => {
           </Typography>
         </Card>
 
-        <Card sx={{ textAlign: 'left', paddingX: 2, paddingY: 2, borderRadius: 3, boxShadow: 3, color: '#00a63e' }}>
-          <Box sx={{ backgroundColor: '#e7ffecff', display: 'flex', alignItems: 'center', justifyContent: 'center', width: 40, height: 40, borderRadius: 2 }}>
+        <Card sx={{ textAlign: 'left', paddingX: 2, paddingY: 2, borderRadius: 3, boxShadow: 3 }}>
+          <Box
+            sx={{
+              backgroundColor: '#e7ffecff',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              width: 40,
+              height: 40,
+              borderRadius: 2,
+              transition: '0,2s',
+              '&:hover': { backgroundColor: '#abd5b4ff', transition: '0.2s' },
+            }}
+          >
             <Users color="#00a63e" />
           </Box>
           <Typography sx={{ fontSize: 16, color: '#000', fontWeight: 500, marginY: 2 }}>
@@ -172,7 +221,6 @@ export const About = () => {
         </Card>
       </Box>
 
-      {/* Lista de especialistas */}
       <Box sx={{ display: 'grid', gridTemplateColumns: '1fr 1fr', marginY: 6 }}>
         <Box sx={{ textAlign: 'left', width: '100%', paddingRight: 2 }}>
           <Typography sx={{ color: '#000', fontSize: 20, fontWeight: 600 }}>
@@ -215,6 +263,13 @@ export const About = () => {
               />
             </ListItem>
           </List>
+          <Button
+            variant="contained"
+            color="secondary"
+            sx={{ textTransform: 'none', borderRadius: 2, marginY: 4 }}
+          >
+            Conheça Nossa Equipe <ArrowRight style={{ scale: 0.8, marginLeft: 15 }} />
+          </Button>
         </Box>
       </Box>
     </Box>
