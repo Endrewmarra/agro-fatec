@@ -6,13 +6,13 @@ import { getPayload } from 'payload'
 import config from '@payload-config'
 
 export const Appresentation = async () => {
-    const payload = await getPayload({ config })
-    const siteMetrics = await payload.findGlobal({ slug: 'site-metrics' })
+  const payload = await getPayload({ config })
+  const siteMetrics = await payload.findGlobal({ slug: 'site-metrics' })
 
   return (
     <Box
       sx={{
-        width:'100vw',
+        width: '100vw',
         paddingLeft: 11,
         paddingRight: 11,
         bgcolor: '#E3FCEB',
@@ -46,25 +46,25 @@ export const Appresentation = async () => {
 
         <Box sx={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 2 }}>
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-            <CircleCheckBig color="secondary.main" size={20} />
+            <CircleCheckBig color="#00a63e" size={20} />
             <Typography variant="body1" sx={{ fontSize: 16, fontWeight: 300, color: 'grey.800' }}>
               + 15 Anos de Experiência
             </Typography>
           </Box>
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-            <CircleCheckBig color="secondary.main" size={20} />
+            <CircleCheckBig color="#00a63e" size={20} />
             <Typography variant="body1" sx={{ fontSize: 16, fontWeight: 300, color: 'grey.800' }}>
               + 500 Fazendas Atendidas
             </Typography>
           </Box>
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-            <CircleCheckBig color="secondary.main" size={20} />
+            <CircleCheckBig color="#00a63e" size={20} />
             <Typography variant="body1" sx={{ fontSize: 16, fontWeight: 300, color: 'grey.800' }}>
               30% Aumento Médio
             </Typography>
           </Box>
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-            <CircleCheckBig color="secondary.main" size={20} />
+            <CircleCheckBig color="#00a63e" size={20} />
             <Typography variant="body1" sx={{ fontSize: 16, fontWeight: 300, color: 'grey.800' }}>
               Suporte 24/7
             </Typography>
