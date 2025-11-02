@@ -1,15 +1,9 @@
 import {
   Box,
   Typography,
-  Card,
-  CardContent,
-  CardMedia,
   Button,
-  List,
-  ListItem,
-  ListItemIcon,
 } from '@mui/material'
-import { Dot, ArrowRight, Wheat, Sprout, Zap } from 'lucide-react'
+import {Wheat, Sprout, Zap } from 'lucide-react'
 import { CardServices } from './CardServices'
 
 export const Services = () => {
@@ -48,11 +42,11 @@ export const Services = () => {
           textAlign: 'left',
         }}
       >
-        <CardServices src='https://images.unsplash.com/photo-1655131468751-c4210f1c4c5e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb3JuJTIwZmllbGQlMjBhZ3JpY3VsdHVyZXxlbnwxfHx8fDE3NTc2MTgwMDd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral' alt='plantação de milho' icon={<Wheat />} title='Consultoria em Milho' description='Maximização da produtividade através de técnicas avançadas de manejo, escolha de variedades e otimização de recursos.' Iten1='Análise de solo especializada' Iten2='Seleção de híbridos' Iten3='Manejo integrado de pragas' Iten4='Otimização de irrigação' resume='Aumento médio de 25% na produtividade'/>
-        <CardServices />
-        <CardServices />
+        <CardServices src='https://images.unsplash.com/photo-1655131468751-c4210f1c4c5e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb3JuJTIwZmllbGQlMjBhZ3JpY3VsdHVyZXxlbnwxfHx8fDE3NTc2MTgwMDd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral' alt='Plantação de Milho' icon={<Wheat />} title='Consultoria em Milho' description='Maximização da produtividade através de técnicas avançadas de manejo, escolha de variedades e otimização de recursos.' Iten1='Análise de solo especializada' Iten2='Seleção de híbridos' Iten3='Manejo integrado de pragas' Iten4='Otimização de irrigação' resume='Aumento médio de 25% na produtividade'/>
         
-       
+        <CardServices src='https://images.unsplash.com/photo-1562702076-c719c8796b8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzb3liZWFuJTIwZmFybXxlbnwxfHx8fDE3NTc2MTgzNTd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral' alt='Plantação de Soja' icon={<Sprout />} title='Consultoria em Soja' description='Estratégias completas para cultivo sustentável de soja, desde o plantio até a colheita, com foco em qualidade e rendimento.' Iten1='Rotação de culturas' Iten2='Manejo de resistência' Iten3='Controle biológico' Iten4='Monitoramento de doenças' resume='Redução de 40% nos custos de produção'  />
+        
+        <CardServices src='https://images.unsplash.com/photo-1581092335878-2d9ff86ca2bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZ3JpY3VsdHVyZSUyMHRlY2hub2xvZ3l8ZW58MXx8fHwxNzU3NjE4MzU4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral' alt='Plantação de Sorgo' icon={<Zap />} title='Consultoria em Sorgo' description='Aproveitamento das características únicas do sorgo para diversificação produtiva e sustentabilidade no agronegócio.' Iten1='Resistência à seca' Iten2='Adaptação climática' Iten3='Uso em biocombustíveis' Iten4='Integração lavoura-pecuária' resume='35% maior resistência à estiagem'  />    
       </Box>
 
       <Box
@@ -76,7 +70,7 @@ export const Services = () => {
           variant="outlined"
           sx={{
             backgroundColor: 'white',
-            color: '#00a63e',
+            color: 'secondary.main',
             margin: 2,
             fontSize: 12,
             fontWeight: 600,
