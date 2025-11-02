@@ -12,7 +12,7 @@ export const Appresentation = () => {
         width:'100vw',
         paddingLeft: 11,
         paddingRight: 11,
-        bgcolor: '#e7ffecff',
+        bgcolor: '#E3FCEB',
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',
         alignItems: 'center',
@@ -43,25 +43,25 @@ export const Appresentation = () => {
 
         <Box sx={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 2 }}>
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-            <CircleCheckBig color="#00a63e" size={20} />
+            <CircleCheckBig color="secondary.main" size={20} />
             <Typography variant="body1" sx={{ fontSize: 16, fontWeight: 300, color: 'grey.800' }}>
               + 15 Anos de Experiência
             </Typography>
           </Box>
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-            <CircleCheckBig color="#00a63e" size={20} />
+            <CircleCheckBig color="secondary.main" size={20} />
             <Typography variant="body1" sx={{ fontSize: 16, fontWeight: 300, color: 'grey.800' }}>
               + 500 Fazendas Atendidas
             </Typography>
           </Box>
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-            <CircleCheckBig color="#00a63e" size={20} />
+            <CircleCheckBig color="secondary.main" size={20} />
             <Typography variant="body1" sx={{ fontSize: 16, fontWeight: 300, color: 'grey.800' }}>
               30% Aumento Médio
             </Typography>
           </Box>
           <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-            <CircleCheckBig color="#00a63e" size={20} />
+            <CircleCheckBig color="secondary.main" size={20} />
             <Typography variant="body1" sx={{ fontSize: 16, fontWeight: 300, color: 'grey.800' }}>
               Suporte 24/7
             </Typography>
@@ -102,7 +102,7 @@ export const Appresentation = () => {
               borderRadius: 3,
               boxShadow: 3,
               display: 'grid',
-              color: '#717171ff',
+              color: 'grey.600',
               gridTemplateColumns: '1fr 4fr',
               width: '185px',
               alignItems: 'center',
@@ -112,7 +112,7 @@ export const Appresentation = () => {
 
             <Typography>
               <Typography sx={{ fontSize: 12 }}>Produtividade</Typography>
-              <Typography sx={{ fontSize: 16, color: '#016630', fontWeight: '600' }}>
+              <Typography sx={{ fontSize: 16, color: 'primary.main', fontWeight: '600' }}>
                 +30%
               </Typography>
             </Typography>
@@ -123,7 +123,7 @@ export const Appresentation = () => {
               borderRadius: 3,
               boxShadow: 3,
               display: 'grid',
-              color: '#717171ff',
+              color: 'grey.600',
               gridTemplateColumns: '1fr 4fr',
               width: '185px',
               alignItems: 'center',
@@ -133,7 +133,7 @@ export const Appresentation = () => {
 
             <Typography>
               <Typography sx={{ fontSize: 12 }}>Clientes</Typography>
-              <Typography sx={{ fontSize: 16, color: '#016630', fontWeight: '600' }}>
+              <Typography sx={{ fontSize: 16, color: 'primary.main', fontWeight: '600' }}>
                 500+
               </Typography>
             </Typography>
@@ -144,7 +144,7 @@ export const Appresentation = () => {
               borderRadius: 3,
               boxShadow: 3,
               display: 'grid',
-              color: '#717171ff',
+              color: 'grey.600',
               gridTemplateColumns: '1fr 4fr',
               width: '185px',
               alignItems: 'center',
@@ -154,7 +154,7 @@ export const Appresentation = () => {
 
             <Typography>
               <Typography sx={{ fontSize: 12 }}>Experiência</Typography>
-              <Typography sx={{ fontSize: 16, color: '#016630', fontWeight: '600' }}>
+              <Typography sx={{ fontSize: 16, color: 'primary.main', fontWeight: '600' }}>
                 15 anos
               </Typography>
             </Typography>

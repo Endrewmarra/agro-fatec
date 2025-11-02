@@ -2,7 +2,7 @@ import { theme } from '@/app/config/theme'
 import { Box, Button, Typography } from '@mui/material'
 import { Leaf } from 'lucide-react'
 import Link from 'next/link'
-import { styled } from '@mui/material/styles'
+
 
 
 export const Header = () => {
@@ -24,7 +24,7 @@ export const Header = () => {
       <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
         <Box
           sx={{
-            backgroundColor: '#016630',
+            backgroundColor: 'primary.main',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
@@ -36,7 +36,7 @@ export const Header = () => {
           <Leaf color="white" />
         </Box>
 
-        <Typography variant="h2" sx={{ fontSize: 24, fontWeight: 500, color: '#016630' }}>
+        <Typography variant="h2" sx={{ fontSize: 24, fontWeight: 500, color: 'primary.main' }}>
           AgroConsult
         </Typography>
       </Box>
@@ -52,17 +52,17 @@ export const Header = () => {
         }}
       >
         
-        <Box component={Link} href="#"  sx={{ textDecoration: 'none', color: '#016630',transition: 'color 0.2s',
-            '&:hover': { color: '#00a63e' } }}>
+        <Box component={Link} href="#"  sx={{ textDecoration: 'none', color: 'primary.main',transition: 'color 0.2s',
+            '&:hover': { color: 'secondary.main' } }}>
           Home
         </Box>
 
-        <Box component={Link} href="/Artigos" sx={{ textDecoration: 'none', color:  theme.palette.grey[700], transition: 'color 0.2s','&:hover': { color: '#016630' } }}>
+        <Box component={Link} href="/Artigos" sx={{ textDecoration: 'none', color:  theme.palette.grey[700], transition: 'color 0.2s','&:hover': { color: 'primary.main' } }}>
           Artigos
         </Box>
         <Box component={Link}
           href="/fale-conosco"
-          sx={{ textDecoration: 'none', color: theme.palette.grey[700], transition: 'color 0.2s','&:hover': { color: '#016630' }}}
+          sx={{ textDecoration: 'none', color: theme.palette.grey[700], transition: 'color 0.2s','&:hover': { color: 'primary.main' }}}
         >
           Fale Conosco
         </Box>

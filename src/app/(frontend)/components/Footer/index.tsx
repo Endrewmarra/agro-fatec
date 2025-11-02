@@ -9,9 +9,8 @@ export const Footer = () => {
         width: '100vw',
         paddingX: 15,
         paddingY: 10,
-        backgroundColor: '#1a1727ff',
+        backgroundColor: '#101828',
         zIndex: 1,
-        
       }}
     >
       <Box
@@ -20,14 +19,13 @@ export const Footer = () => {
           gridTemplateColumns: '1fr 1fr 1fr 1fr',
           justifyContent: 'space-between',
           marginBottom: 2,
-          
         }}
       >
         <Box sx={{ display: 'inline', width: '19vw' }}>
           <Box sx={{ display: 'flex', alignItems: 'center', marginBottom: 2 }}>
             <Box
               sx={{
-                backgroundColor: '#00a63e',
+                backgroundColor: 'secondary.main',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -52,33 +50,51 @@ export const Footer = () => {
             Especialistas em consultoria agronômica para milho, soja e sorgo. Transformamos
             conhecimento em resultados práticos para o seu agronegócio.
           </Typography>
-{/* Alinhas as redes sociais */}
-          <Box sx={{display:'flex', justifyItems:'left', }}>
+          {/* Alinhar as redes sociais */}
+          <Box sx={{ display: 'flex', justifyItems: 'left' }}>
             <Button
-            variant="outlined"
-            sx={{ textTransform: 'none', backgroundColor: 'white', borderRadius: 4, scale:0.5, height:70,}}
-          >
-            <Facebook size={'40px'} color='gray'/>
-          </Button>
-            <Button
-            variant="outlined"
-            sx={{ textTransform: 'none', backgroundColor: 'white', borderRadius: 4, scale:0.5, height:70,}}
+              variant="outlined"
+              sx={{
+                textTransform: 'none',
+                backgroundColor: 'white',
+                borderRadius: 4,
+                scale: 0.5,
+                height: 70,
+              }}
             >
-            <Instagram size={'40px'} color='gray'/>
+              <Facebook size={'40px'} color="grey" />
             </Button>
             <Button
-            variant="outlined"
-            sx={{ textTransform: 'none', backgroundColor: 'white', borderRadius: 4, scale:0.5, height:70 }}
+              variant="outlined"
+              sx={{
+                textTransform: 'none',
+                backgroundColor: 'white',
+                borderRadius: 4,
+                scale: 0.5,
+                height: 70,
+              }}
             >
-            <Linkedin size={'40px'} color='gray'/>
+              <Instagram size={'40px'} color="grey" />
+            </Button>
+            <Button
+              variant="outlined"
+              sx={{
+                textTransform: 'none',
+                backgroundColor: 'white',
+                borderRadius: 4,
+                scale: 0.5,
+                height: 70,
+              }}
+            >
+              <Linkedin size={'40px'} color="grey" />
             </Button>
           </Box>
         </Box>
         <Box sx={{ color: 'white' }}>
           Nossos Serviços
-          
           <Box sx={{ lineHeight: 2 }}>
-            <Box component={Link}
+            <Box
+              component={Link}
               href={'/'}
               sx={{
                 display: 'block',
@@ -87,12 +103,13 @@ export const Footer = () => {
                 fontSize: '16px',
                 fontWeight: 500,
                 transition: 'color 0.2s',
-            '&:hover': { color: '#00a63e' }
+                '&:hover': { color: 'secondary.main' },
               }}
             >
               Consultoria em Milho
             </Box>
-            <Box component={Link}
+            <Box
+              component={Link}
               href={'/'}
               sx={{
                 display: 'block',
@@ -101,12 +118,13 @@ export const Footer = () => {
                 fontSize: '16px',
                 fontWeight: 500,
                 transition: 'color 0.2s',
-            '&:hover': { color: '#00a63e' }
+                '&:hover': { color: 'secondary.main' },
               }}
             >
               Consultoria em Soja
             </Box>
-            <Box component={Link}
+            <Box
+              component={Link}
               href={'/'}
               sx={{
                 display: 'block',
@@ -115,12 +133,13 @@ export const Footer = () => {
                 fontSize: '16px',
                 fontWeight: 500,
                 transition: 'color 0.2s',
-            '&:hover': { color: '#00a63e' }
+                '&:hover': { color: 'secondary.main' },
               }}
             >
               Consultoria em Sorgo
             </Box>
-            <Box component={Link}
+            <Box
+              component={Link}
               href={'/'}
               sx={{
                 display: 'block',
@@ -129,12 +148,13 @@ export const Footer = () => {
                 fontSize: '16px',
                 fontWeight: 500,
                 transition: 'color 0.2s',
-            '&:hover': { color: '#00a63e' }
+                '&:hover': { color: 'secondary.main' },
               }}
             >
               Análise de Solo
             </Box>
-            <Box component={Link}
+            <Box
+              component={Link}
               href={'/'}
               sx={{
                 display: 'block',
@@ -143,12 +163,13 @@ export const Footer = () => {
                 fontSize: '16px',
                 fontWeight: 500,
                 transition: 'color 0.2s',
-            '&:hover': { color: '#00a63e' }
+                '&:hover': { color: 'secondary.main' },
               }}
             >
               Manejo Integrado
             </Box>
-            <Box component={Link}
+            <Box
+              component={Link}
               href={'/'}
               sx={{
                 display: 'block',
@@ -157,7 +178,7 @@ export const Footer = () => {
                 fontSize: '16px',
                 fontWeight: 500,
                 transition: 'color 0.2s',
-            '&:hover': { color: '#00a63e' }
+                '&:hover': { color: 'secondary.main' },
               }}
             >
               Monioramento de Safras
@@ -166,9 +187,9 @@ export const Footer = () => {
         </Box>
         <Box sx={{ color: 'white' }}>
           Empresa
-          
           <Box sx={{ lineHeight: 2 }}>
-            <Box component={Link}
+            <Box
+              component={Link}
               href={'/'}
               sx={{
                 display: 'block',
@@ -177,12 +198,13 @@ export const Footer = () => {
                 fontSize: '16px',
                 fontWeight: 500,
                 transition: 'color 0.2s',
-            '&:hover': { color: '#00a63e' }
+                '&:hover': { color: 'secondary.main' },
               }}
             >
               Sobre Nós
             </Box>
-            <Box component={Link}
+            <Box
+              component={Link}
               href={'/'}
               sx={{
                 display: 'block',
@@ -191,12 +213,13 @@ export const Footer = () => {
                 fontSize: '16px',
                 fontWeight: 500,
                 transition: 'color 0.2s',
-            '&:hover': { color: '#00a63e' }
+                '&:hover': { color: 'secondary.main' },
               }}
             >
               Nossa Equipe
             </Box>
-            <Box component={Link}
+            <Box
+              component={Link}
               href={'/'}
               sx={{
                 display: 'block',
@@ -205,12 +228,13 @@ export const Footer = () => {
                 fontSize: '16px',
                 fontWeight: 500,
                 transition: 'color 0.2s',
-            '&:hover': { color: '#00a63e' }
+                '&:hover': { color: 'secondary.main' },
               }}
             >
               Casos de sucesso
             </Box>
-            <Box component={Link}
+            <Box
+              component={Link}
               href={'/'}
               sx={{
                 display: 'block',
@@ -219,12 +243,13 @@ export const Footer = () => {
                 fontSize: '16px',
                 fontWeight: 500,
                 transition: 'color 0.2s',
-            '&:hover': { color: '#00a63e' }
+                '&:hover': { color: 'secondary.main' },
               }}
             >
               Artigos e Blog
             </Box>
-            <Box component={Link}
+            <Box
+              component={Link}
               href={'/'}
               sx={{
                 display: 'block',
@@ -233,12 +258,13 @@ export const Footer = () => {
                 fontSize: '16px',
                 fontWeight: 500,
                 transition: 'color 0.2s',
-            '&:hover': { color: '#00a63e' }
+                '&:hover': { color: 'secondary.main' },
               }}
             >
               Carreiras
             </Box>
-            <Box component={Link}
+            <Box
+              component={Link}
               href={'/'}
               sx={{
                 display: 'block',
@@ -247,7 +273,7 @@ export const Footer = () => {
                 fontSize: '16px',
                 fontWeight: 500,
                 transition: 'color 0.2s',
-            '&:hover': { color: '#00a63e' }
+                '&:hover': { color: 'secondary.main' },
               }}
             >
               Política de Privacidade
@@ -304,7 +330,7 @@ export const Footer = () => {
         </Box>
       </Box>
       {/* Add copyright */}
-      <Box sx={{ borderTop: '2px solid #393b4fff' }}></Box>
+      <Box sx={{ borderTop: '2px solid #364153' }}></Box>
     </Box>
   )
 }

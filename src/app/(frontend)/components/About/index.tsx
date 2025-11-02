@@ -1,42 +1,11 @@
-'use client'
-
-import {
-  Box,
-  Typography,
-  Card,
-  List,
-  ListItem,
-  ListItemIcon,
-  ListItemText,
-  Button,
-} from '@mui/material'
-import { Lightbulb, Shield, Target, Users, Dot, ArrowRight, Scale } from 'lucide-react'
-import { useEffect, useState } from 'react'
-import { getSiteMetrics } from '@/lib/getSiteMetrics'
+import { Box, Typography, Card, List, ListItem, ListItemIcon, ListItemText,Button } from '@mui/material'
+import { Lightbulb, Shield, Target, Users, Dot, ArrowRight } from 'lucide-react'
 
 export const About = () => {
-  const [metrics, setMetrics] = useState({
-    properties_served: 0,
-    increased_productivity: 0,
-    customer_satisfication: 0,
-  })
-
-  useEffect(() => {
-    const fetchMetrics = async () => {
-      try {
-        const data = await getSiteMetrics()
-        setMetrics(data)
-      } catch (error) {
-        console.error('Erro ao buscar métricas:', error)
-      }
-    }
-    fetchMetrics()
-  }, [])
-
   return (
     <Box
       sx={{
-        bgcolor: '#f5f5f5ff',
+        bgcolor: '#F9FAFB',
         width: '100vw',
         paddingX: 15,
         paddingY: 8,
@@ -44,19 +13,18 @@ export const About = () => {
         textAlign: 'center',
       }}
     >
-      <Box sx={{ backgroundColor: '#e7ffecff', borderRadius: 2 }}>
+      <Box sx={{ backgroundColor: '#DBFCE7', borderRadius: 2 }}>
         <Typography
-          sx={{ paddingY: 0.5, margin: 2, fontSize: 12, color: '#016630', fontWeight: 600 }}
+          sx={{ paddingY: 0.5, margin: 2, fontSize: 12, color: 'primary.main', fontWeight: 600 }}
         >
           Sobre a AgroConsult
         </Typography>
       </Box>
-
       <Box sx={{ marginBottom: 8 }}>
         <Typography sx={{ fontSize: 36, fontWeight: 'bold', marginBottom: 2 }}>
           Liderança em Consultoria Agronômica
         </Typography>
-        <Typography sx={{ color: '#575757ff', paddingX: 34 }}>
+        <Typography sx={{ color: 'grey.800', paddingX: 34 }}>
           Somos uma empresa especializada em consultoria para o agronegócio, com foco exclusivo em
           milho, soja e sorgo. Nossa missão é maximizar a produtividade e rentabilidade das
           propriedades rurais através de soluções inovadoras e sustentáveis.
@@ -70,61 +38,67 @@ export const About = () => {
             paddingY: 4,
             borderRadius: 3,
             boxShadow: 3,
-            color: '#00a63e',
+            color: 'secondary.main',
             height: '150px',
           }}
         >
-          <Box sx={{ fontSize: '2rem', fontWeight: 500 }}>{metrics.properties_served}+</Box>
-          <Typography sx={{ fontSize: 14, color: '#717171ff' }}>Propriedades Atendidas</Typography>
+          <Box sx={{ fontSize: '2rem', fontWeight: 500 }}> 500+ </Box>
+          <Typography sx={{ fontSize: 14, color: 'grey.800' }}>Propriedades Atendidas</Typography>
         </Card>
-
         <Card
           sx={{
             paddingX: 6,
             paddingY: 4,
             borderRadius: 3,
             boxShadow: 3,
-            color: '#00a63e',
+            color: 'secondary.main',
             height: '150px',
           }}
         >
-          <Box sx={{ fontSize: '2rem', fontWeight: 500 }}>15</Box>
-          <Typography sx={{ fontSize: 14, color: '#717171ff' }}>Anos de Experiência</Typography>
+          <Box sx={{ fontSize: '2rem', fontWeight: 500 }}> 15 </Box>
+          <Typography sx={{ fontSize: 14, color: 'grey.800' }}>Anos de Experiência</Typography>
         </Card>
-
         <Card
           sx={{
             paddingX: 6,
             paddingY: 4,
             borderRadius: 3,
             boxShadow: 3,
-            color: '#00a63e',
+            color: 'secondary.main',
             height: '150px',
           }}
         >
-          <Box sx={{ fontSize: '2rem', fontWeight: 500 }}>{metrics.increased_productivity}%</Box>
-          <Typography sx={{ fontSize: 14, color: '#717171ff' }}>
+          <Box sx={{ fontSize: '2rem', fontWeight: 500 }}> 30% </Box>
+          <Typography sx={{ fontSize: 14, color: 'grey.800' }}>
             Aumento Médio de Produtividade
           </Typography>
         </Card>
-
         <Card
           sx={{
             paddingX: 6,
             paddingY: 4,
             borderRadius: 3,
             boxShadow: 3,
-            color: '#00a63e',
+            color: 'secondary.main',
             height: '150px',
           }}
         >
-          <Box sx={{ fontSize: '2rem', fontWeight: 500 }}>{metrics.customer_satisfication}%</Box>
-          <Typography sx={{ fontSize: 14, color: '#717171ff' }}>Satisfação dos Clientes</Typography>
+          <Box sx={{ fontSize: '2rem', fontWeight: 500 }}> 98% </Box>
+          <Typography sx={{ fontSize: 14, color: 'grey.800' }}>Satisfação dos Clientes</Typography>
         </Card>
       </Box>
 
       <Box sx={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', gap: 3, marginTop: 6 }}>
-        <Card sx={{ textAlign: 'left', paddingX: 2, paddingY: 2, borderRadius: 3, boxShadow: 3 }}>
+        <Card
+          sx={{
+            textAlign: 'left',
+            paddingX: 2,
+            paddingY: 2,
+            borderRadius: 3,
+            boxShadow: 3,
+            color: 'secondary.main',
+          }}
+        >
           <Box
             sx={{
               backgroundColor: '#e7ffecff',
@@ -140,15 +114,23 @@ export const About = () => {
           >
             <Target color="#00a63e" />
           </Box>
-          <Typography sx={{ fontSize: 16, color: '#000', fontWeight: 500, marginY: 2 }}>
+          <Typography sx={{ fontSize: 16, color: 'black', fontWeight: 500, marginY: 2 }}>
             Resultados Comprovados
           </Typography>
           <Typography sx={{ fontSize: 14, color: '#575757ff', fontWeight: 400 }}>
             Mais de 15 anos transformando propriedades rurais em negócios altamente produtivos.
           </Typography>
         </Card>
-
-        <Card sx={{ textAlign: 'left', paddingX: 2, paddingY: 2, borderRadius: 3, boxShadow: 3 }}>
+        <Card
+          sx={{
+            textAlign: 'left',
+            paddingX: 2,
+            paddingY: 2,
+            borderRadius: 3,
+            boxShadow: 3,
+            color: 'secondary.main',
+          }}
+        >
           <Box
             sx={{
               backgroundColor: '#e7ffecff',
@@ -164,15 +146,23 @@ export const About = () => {
           >
             <Lightbulb color="#00a63e" />
           </Box>
-          <Typography sx={{ fontSize: 16, color: '#000', fontWeight: 500, marginY: 2 }}>
-            Soluções Inovadoras
+          <Typography sx={{ fontSize: 16, color: 'black', fontWeight: 500, marginY: 2 }}>
+            Resultados Comprovados
           </Typography>
-          <Typography sx={{ fontSize: 14, color: '#575757ff', fontWeight: 400 }}>
+          <Typography sx={{ fontSize: 14, color: 'grey.800', fontWeight: 400 }}>
             Mais de 15 anos transformando propriedades rurais em negócios altamente produtivos.
           </Typography>
         </Card>
-
-        <Card sx={{ textAlign: 'left', paddingX: 2, paddingY: 2, borderRadius: 3, boxShadow: 3 }}>
+        <Card
+          sx={{
+            textAlign: 'left',
+            paddingX: 2,
+            paddingY: 2,
+            borderRadius: 3,
+            boxShadow: 3,
+            color: 'secondary.main',
+          }}
+        >
           <Box
             sx={{
               backgroundColor: '#e7ffecff',
@@ -188,15 +178,24 @@ export const About = () => {
           >
             <Shield color="#00a63e" />
           </Box>
-          <Typography sx={{ fontSize: 16, color: '#000', fontWeight: 500, marginY: 2 }}>
-            Compromisso com a Qualidade
+          <Typography sx={{ fontSize: 16, color: 'black', fontWeight: 500, marginY: 2 }}>
+            Resultados Comprovados
           </Typography>
-          <Typography sx={{ fontSize: 14, color: '#575757ff', fontWeight: 400 }}>
+          <Typography sx={{ fontSize: 14, color: 'grey.800', fontWeight: 400 }}>
             Mais de 15 anos transformando propriedades rurais em negócios altamente produtivos.
           </Typography>
         </Card>
 
-        <Card sx={{ textAlign: 'left', paddingX: 2, paddingY: 2, borderRadius: 3, boxShadow: 3 }}>
+        <Card
+          sx={{
+            textAlign: 'left',
+            paddingX: 2,
+            paddingY: 2,
+            borderRadius: 3,
+            boxShadow: 3,
+            color: 'secondary.main',
+          }}
+        >
           <Box
             sx={{
               backgroundColor: '#e7ffecff',
@@ -212,10 +211,10 @@ export const About = () => {
           >
             <Users color="#00a63e" />
           </Box>
-          <Typography sx={{ fontSize: 16, color: '#000', fontWeight: 500, marginY: 2 }}>
-            Parceria com o Produtor
+          <Typography sx={{ fontSize: 16, color: 'black', fontWeight: 500, marginY: 2 }}>
+            Resultados Comprovados
           </Typography>
-          <Typography sx={{ fontSize: 14, color: '#575757ff', fontWeight: 400 }}>
+          <Typography sx={{ fontSize: 14, color: 'grey.800', fontWeight: 400 }}>
             Mais de 15 anos transformando propriedades rurais em negócios altamente produtivos.
           </Typography>
         </Card>
@@ -223,15 +222,15 @@ export const About = () => {
 
       <Box sx={{ display: 'grid', gridTemplateColumns: '1fr 1fr', marginY: 6 }}>
         <Box sx={{ textAlign: 'left', width: '100%', paddingRight: 2 }}>
-          <Typography sx={{ color: '#000', fontSize: 20, fontWeight: 600 }}>
+          <Typography sx={{ color: 'black', fontSize: 20, fontWeight: 600 }}>
             Nossa Equipe de Especialistas
           </Typography>
-          <Typography sx={{ color: '#575757ff', fontSize: 16, fontWeight: 500 }}>
+          <Typography sx={{ color: 'grey.800', fontSize: 16, fontWeight: 500 }}>
             Contamos com uma equipe multidisciplinar de engenheiros agrônomos, especialistas em
             solos, entomologistas e consultores em agronegócio. Cada membro da nossa equipe possui
             vasta experiência prática e conhecimento científico atualizado.
           </Typography>
-          <List sx={{ color: '#000' }}>
+          <List sx={{ color: 'black' }}>
             <ListItem sx={{ marginY: -2 }}>
               <ListItemIcon sx={{ scale: 2, marginRight: -5 }}>
                 <Dot color="#00a63e" />
