@@ -1,11 +1,14 @@
 import { Box, Button, Card, Typography } from '@mui/material'
-import { CircleCheckBig } from 'lucide-react'
+import { CircleCheckBig, TrendingUp, Users, Award } from 'lucide-react'
+import { CardAppresentation } from './CardAppresentation'
 import Image from 'next/image'
-import { TrendingUp } from 'lucide-react'
-import { Users } from 'lucide-react'
-import { Award } from 'lucide-react'
+import { getPayload } from 'payload'
+import config from '@payload-config'
 
-export const Appresentation = () => {
+export const Appresentation = async () => {
+    const payload = await getPayload({ config })
+    const siteMetrics = await payload.findGlobal({ slug: 'site-metrics' })
+
   return (
     <Box
       sx={{
@@ -95,70 +98,22 @@ export const Appresentation = () => {
           style={{ borderRadius: 18 }}
         />
 
-        <Box sx={{ marginTop: -5, marginLeft: -2, display: 'flex', gap: 2 }}>
-          <Card
-            sx={{
-              padding: 2,
-              borderRadius: 3,
-              boxShadow: 3,
-              display: 'grid',
-              color: 'grey.600',
-              gridTemplateColumns: '1fr 4fr',
-              width: '185px',
-              alignItems: 'center',
-            }}
-          >
-            <TrendingUp color="#00a63e" />
-
-            <Typography>
-              <Typography sx={{ fontSize: 12 }}>Produtividade</Typography>
-              <Typography sx={{ fontSize: 16, color: 'primary.main', fontWeight: '600' }}>
-                +30%
-              </Typography>
-            </Typography>
-          </Card>
-          <Card
-            sx={{
-              padding: 2,
-              borderRadius: 3,
-              boxShadow: 3,
-              display: 'grid',
-              color: 'grey.600',
-              gridTemplateColumns: '1fr 4fr',
-              width: '185px',
-              alignItems: 'center',
-            }}
-          >
-            <Users color="#00a63e" />
-
-            <Typography>
-              <Typography sx={{ fontSize: 12 }}>Clientes</Typography>
-              <Typography sx={{ fontSize: 16, color: 'primary.main', fontWeight: '600' }}>
-                500+
-              </Typography>
-            </Typography>
-          </Card>
-          <Card
-            sx={{
-              padding: 2,
-              borderRadius: 3,
-              boxShadow: 3,
-              display: 'grid',
-              color: 'grey.600',
-              gridTemplateColumns: '1fr 4fr',
-              width: '185px',
-              alignItems: 'center',
-            }}
-          >
-            <Award color="#00a63e" alignmentBaseline="middle" />
-
-            <Typography>
-              <Typography sx={{ fontSize: 12 }}>Experiência</Typography>
-              <Typography sx={{ fontSize: 16, color: 'primary.main', fontWeight: '600' }}>
-                15 anos
-              </Typography>
-            </Typography>
-          </Card>
+        <Box sx={{ marginTop: -5, marginLeft: -1, display: 'flex', gap: 2 }}>
+          <CardAppresentation
+            description={`+${siteMetrics?.increased_productivity}%`}
+            title="Produtividade"
+            icon={<TrendingUp size={30} />}
+          />
+          <CardAppresentation
+            description={`${siteMetrics?.properties_served}+`}
+            title="Clientes"
+            icon={<Users size={30} />}
+          />
+          <CardAppresentation
+            description={`${new Date().getFullYear() - 2010} Anos`}
+            title="Experiência"
+            icon={<Award size={30} />}
+          />
         </Box>
       </Box>
     </Box>
