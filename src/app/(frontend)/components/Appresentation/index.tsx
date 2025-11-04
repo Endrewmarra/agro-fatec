@@ -15,7 +15,7 @@ export const Appresentation = async () => {
         width: '100vw',
         paddingLeft: 11,
         paddingRight: 11,
-        bgcolor: '#E3FCEB',
+        bgcolor: 'success.main',
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',
         alignItems: 'center',
@@ -30,7 +30,7 @@ export const Appresentation = async () => {
           Maximize o Potencial do seu{' '}
           <Typography
             sx={{ color: 'primary.main', fontSize: 48, fontWeight: 600, display: 'inline' }}
-            variant="h1"
+          
           >
             Agronegócio
           </Typography>

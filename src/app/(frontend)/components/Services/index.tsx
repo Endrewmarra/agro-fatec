@@ -1,6 +1,7 @@
 import { Box, Typography, Button } from '@mui/material'
 import { Wheat, Sprout, Zap } from 'lucide-react'
 import { CardServices } from './CardServices'
+import { Title } from '../Title'
 
 export const Services = () => {
   return (
@@ -13,22 +14,9 @@ export const Services = () => {
         textAlign: 'center',
       }}
     >
-      <Box sx={{ backgroundColor: '#e7ffecff', borderRadius: 2 }}>
-        <Typography
-          sx={{ paddingY: 0.5, margin: 2, fontSize: 12, color: '#016630', fontWeight: 600 }}
-        >
-          Nossos Serviços
-        </Typography>
-      </Box>
-      <Box sx={{ marginBottom: 8 }}>
-        <Typography sx={{ fontSize: 36, fontWeight: 'bold', marginBottom: 2 }}>
-          Especialização em Três Culturas Estratégicas
-        </Typography>
-        <Typography sx={{ color: '#575757ff', paddingX: 35 }}>
-          Nossa expertise abrange as principais commodities do agronegócio brasileiro, oferecendo
-          soluções personalizadas para cada cultura.
-        </Typography>
-      </Box>
+      <Title sectionTitle='Nosso Serviços' title='Especialização em Três Culturas Estratégicas' description='Nossa expertise abrange as principais commodities do agronegócio brasileiro, oferecendo
+          soluções personalizadas para cada cultura.' />
+      
 
       <Box
         sx={{
@@ -76,6 +64,7 @@ export const Services = () => {
           Iten4="Integração lavoura-pecuária"
           resume="35% maior resistência à estiagem"
         />
+
       </Box>
 
       <Box

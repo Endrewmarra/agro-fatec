@@ -1,5 +1,15 @@
-import { Box, Typography, Card, List, ListItem, ListItemIcon, ListItemText,Button } from '@mui/material'
+import {
+  Box,
+  Typography,
+  Card,
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
+  Button,
+} from '@mui/material'
 import { Lightbulb, Shield, Target, Users, Dot, ArrowRight } from 'lucide-react'
+import { Title } from '../Title'
 
 export const About = () => {
   return (
@@ -13,23 +23,14 @@ export const About = () => {
         textAlign: 'center',
       }}
     >
-      <Box sx={{ backgroundColor: '#DBFCE7', borderRadius: 2 }}>
-        <Typography
-          sx={{ paddingY: 0.5, margin: 2, fontSize: 12, color: 'primary.main', fontWeight: 600 }}
-        >
-          Sobre a AgroConsult
-        </Typography>
-      </Box>
-      <Box sx={{ marginBottom: 8 }}>
-        <Typography sx={{ fontSize: 36, fontWeight: 'bold', marginBottom: 2 }}>
-          Liderança em Consultoria Agronômica
-        </Typography>
-        <Typography sx={{ color: 'grey.800', paddingX: 34 }}>
-          Somos uma empresa especializada em consultoria para o agronegócio, com foco exclusivo em
+      <Title 
+        sectionTitle="Sobre a AgroConsult"
+        title="Liderança em Consultoria Agronômica"
+        description="Somos uma empresa especializada em consultoria para o agronegócio, com foco exclusivo em
           milho, soja e sorgo. Nossa missão é maximizar a produtividade e rentabilidade das
-          propriedades rurais através de soluções inovadoras e sustentáveis.
-        </Typography>
-      </Box>
+          propriedades rurais através de soluções inovadoras e sustentáveis."
+          
+      />
 
       <Box sx={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', gap: 3 }}>
         <Card
