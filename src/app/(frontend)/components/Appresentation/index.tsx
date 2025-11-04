@@ -98,7 +98,7 @@ export const Appresentation = async () => {
           style={{ borderRadius: 18 }}
         />
 
-        <Box sx={{ marginTop: -5, marginLeft: -1, display: 'flex', gap: 2 }}>
+        <Box sx={{ marginTop: -5, marginLeft: -4, display: 'flex', gap: 2 }}>
           <CardAppresentation
             description={`+${siteMetrics?.increased_productivity}%`}
             title="Produtividade"

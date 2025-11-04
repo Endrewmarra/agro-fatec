@@ -13,7 +13,7 @@ export const CardAppresentation = ({ title, description, icon }: CardAppresentat
         padding: 2,
         boxShadow: '0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)',
         borderRadius: 3,
-        width: 170,
+        width: 190,
       }}
     >
       <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'left', gap: 2 }}>
