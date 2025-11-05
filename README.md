@@ -47,7 +47,6 @@ cd agro-fatec
 cp .env.example .env
 ```
 
-Edite o arquivo `.env` e configure sua variável `MONGODB_URI`.
 
 ### 3. Instale dependências e execute o projeto
 
