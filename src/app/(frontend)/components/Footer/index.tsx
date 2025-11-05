@@ -94,23 +94,23 @@ export const Footer = () => {
         <Box sx={{ color: 'white' }}>
           Nossos Serviços
           <Box sx={{ lineHeight: 2 }}>
-            <Links rote="/" text="Consultoria em Milho" />
-            <Links rote="/" text="Consultoria em Soja" />
-            <Links rote="/" text="Consultoria em Sorgo" />
-            <Links rote="/" text="Análise de Solo" />
-            <Links rote="/" text="Manejo Integrado" />
-            <Links rote="/" text="Monitoramento de Safra" />
+            <Links rote="#" text="Consultoria em Milho" />
+            <Links rote="#" text="Consultoria em Soja" />
+            <Links rote="#" text="Consultoria em Sorgo" />
+            <Links rote="#" text="Análise de Solo" />
+            <Links rote="#" text="Manejo Integrado" />
+            <Links rote="#" text="Monitoramento de Safra" />
           </Box>
         </Box>
         <Box sx={{ color: 'white' }}>
           Empresa
           <Box sx={{ lineHeight: 2 }}>
-            <Links rote="/" text="Sobre Nós" />
-            <Links rote="/" text="Nossa Equipe" />
-            <Links rote="/" text="Casos de Sucesso" />
-            <Links rote="/" text="Artigos e Blog" />
-            <Links rote="/" text="Carreiras" />
-            <Links rote="/" text="Política de Privacidde" />
+            <Links rote="#" text="Sobre Nós" />
+            <Links rote="#" text="Nossa Equipe" />
+            <Links rote="#" text="Casos de Sucesso" />
+            <Links rote="#" text="Artigos e Blog" />
+            <Links rote="#" text="Carreiras" />
+            <Links rote="#" text="Política de Privacidde" />
           </Box>
         </Box>
 

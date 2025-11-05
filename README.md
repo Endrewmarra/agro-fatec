@@ -1,67 +1,86 @@
-# Payload Blank Template
+# 🌿 Agro Fatec — Plataforma Web com Payload CMS
 
-This template comes configured with the bare minimum to get started on anything you need.
+Este Projeto é uma consultoria onde tentamos seguir um prototipo do figma para aprender novas tecnologias.
+Ele utiliza **Next.js** para o frontend e **Payload CMS** para gerenciamento dinâmico de conteúdo.
 
-## Quick start
+---
 
-This template can be deployed directly from our Cloud hosting and it will setup MongoDB and cloud S3 object storage for media.
+## 🚀 Tecnologias Utilizadas
 
-## Quick Start - local setup
+| Tecnologia                     | Função                                           |
+| ------------------------------ | -------------------------------------------------- |
+| **Next.js (App Router)** | Renderização do site e navegação               |
+| **React**                | Componentização da interface                     |
+| **Payload CMS**          | Painel administrativo e gerenciamento de conteúdo |
+| **TypeScript**           | Tipagem estática para melhor manutençã          |
+| **FIgma**                | Prototipagem                                       |
+| **MUI (Material UI)**    | Biblioteca de UI para componentes visuais          |
 
-To spin up this template locally, follow these steps:
+---
 
-### Clone
+## ✨ Funcionalidades
 
-After you click the `Deploy` button above, you'll want to have standalone copy of this repo on your machine. If you've already cloned this repo, skip to [Development](#development).
+- Interface profissional
+- Painel administrativo acessível via `/admin`
+- Criação e gerenciamento de conteúdo sem editar código
+- Upload e gerenciamento de imagens
+- Seções dinâmicas atualizadas pelo Payload CMS
+- **Métricas da seção “Sobre” atualizadas automaticamente**, como:
+  - Número de propriedades atendidas
+  - Porcentagem de aumento de produtividade
+  - Porcentagem de satisfação dos clientes
 
-### Development
+---
 
-1. First [clone the repo](#clone) if you have not done so already
-2. `cd my-project && cp .env.example .env` to copy the example environment variables. You'll need to add the `MONGODB_URI` from your Cloud project to your `.env` if you want to use S3 storage and the MongoDB database that was created for you.
+## 🧭 Como Rodar o Projeto Localmente
 
-3. `pnpm install && pnpm dev` to install dependencies and start the dev server
-4. open `http://localhost:3000` to open the app in your browser
+### 1. Clone o repositório
 
-That's it! Changes made in `./src` will be reflected in your app. Follow the on-screen instructions to login and create your first admin user. Then check out [Production](#production) once you're ready to build and serve your app, and [Deployment](#deployment) when you're ready to go live.
+```bash
+git clone https://github.com/Endrewmarra/agro-fatec
+cd agro-fatec
+```
 
-#### Docker (Optional)
+### 2. Configure variáveis de ambiente
 
-If you prefer to use Docker for local development instead of a local MongoDB instance, the provided docker-compose.yml file can be used.
+```bash
+cp .env.example .env
+```
 
-To do so, follow these steps:
+Edite o arquivo `.env` e configure sua variável `MONGODB_URI`.
 
-- Modify the `MONGODB_URI` in your `.env` file to `mongodb://127.0.0.1/<dbname>`
-- Modify the `docker-compose.yml` file's `MONGODB_URI` to match the above `<dbname>`
-- Run `docker-compose up` to start the database, optionally pass `-d` to run in the background.
+### 3. Instale dependências e execute o projeto
 
-## How it works
+```bash
+npm install
+npm run dev
+```
 
-The Payload config is tailored specifically to the needs of most websites. It is pre-configured in the following ways:
+Acesse:
 
-### Collections
+```
+http://localhost:3000
+```
 
-See the [Collections](https://payloadcms.com/docs/configuration/collections) docs for details on how to extend this functionality.
+---
 
-- #### Users (Authentication)
+## 🔐 Acessando o Painel Administrativo
 
-  Users are auth-enabled collections that have access to the admin panel.
+```
+http://localhost:3000/admin
+```
 
-  For additional help, see the official [Auth Example](https://github.com/payloadcms/payload/tree/main/examples/auth) or the [Authentication](https://payloadcms.com/docs/authentication/overview#authentication-overview) docs.
+No primeiro acesso, será solicitado criar um usuário administrador.
+Caso encontre problemas, exclua os dados de usario em agro-course.db
 
-- #### Media
+---
 
-  This is the uploads enabled collection. It features pre-configured sizes, focal point and manual resizing to help you manage your pictures.
+## 🎯 Objetivo do Projeto
 
-### Docker
+Conhecer ferramentas e ter contato com tecnologias utilizadas para desenvolvimento web
 
-Alternatively, you can use [Docker](https://www.docker.com) to spin up this template locally. To do so, follow these steps:
+---
 
-1. Follow [steps 1 and 2 from above](#development), the docker-compose file will automatically use the `.env` file in your project root
-1. Next run `docker-compose up`
-1. Follow [steps 4 and 5 from above](#development) to login and create your first admin user
+## 📄 Licença
 
-That's it! The Docker instance will help you get up and running quickly while also standardizing the development environment across your teams.
-
-## Questions
-
-If you have any issues or questions, reach out to us on [Discord](https://discord.com/invite/payload) or start a [GitHub discussion](https://github.com/payloadcms/payload/discussions).
+Este projeto tem finalidade acadêmica e demonstrativa.
