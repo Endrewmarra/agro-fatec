@@ -1,9 +1,12 @@
+import '../styles.css'
+
 import { Box } from '@mui/material'
 import { getPayload } from 'payload'
 import config from '@payload-config'
 import { Appresentation } from '../components/Appresentation'
 import { Services } from '../components/Services'
 import { About } from '../components/About'
+
 
 
 export default async function HomePage() {
