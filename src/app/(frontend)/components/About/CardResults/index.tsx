@@ -1,4 +1,4 @@
-import { Card, Box, Typography } from '@mui/material'
+import { Paper, Box, Typography } from '@mui/material'
 
 interface CardResultsProps {
   icon: React.ReactNode
@@ -7,14 +7,13 @@ interface CardResultsProps {
 }
 
 export const CardResults = ({ icon, title, description }: CardResultsProps) => {
-  return (
-    <Card
+  return ( 
+    <Paper elevation={3}
       sx={{
         textAlign: 'left',
         paddingX: 2,
         paddingY: 2,
         borderRadius: 3,
-        boxShadow: 3,
         color: 'secondary.main',
       }}
     >
@@ -41,6 +40,6 @@ export const CardResults = ({ icon, title, description }: CardResultsProps) => {
       <Typography sx={{ fontSize: 14, color: '#575757ff', fontWeight: 400 }}>
         {description}
       </Typography>
-    </Card>
+    </Paper>
   )
 }

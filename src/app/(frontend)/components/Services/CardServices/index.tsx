@@ -28,7 +28,7 @@ interface CardServicesProps {
 
 export const CardServices = ({ src, alt, icon, title, description, Iten1, Iten2, Iten3, Iten4, resume}: CardServicesProps) => {
     return(
-        <Card sx={{ borderRadius: 4 }}>
+        <Card sx={{ borderRadius: 4, boxShadow:'0px 2px 5px  rgba(0,0,0,0.5)' }}>
           <Box
             sx={{
               backgroundColor: 'white',

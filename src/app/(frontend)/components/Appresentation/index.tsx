@@ -38,7 +38,7 @@ export const Appresentation = async () => {
 
         <Typography
           variant="body1"
-          sx={{ fontSize: 20, fontWeight: 300, color: 'grey.800', lineHeight: 2 }}
+          sx={{ fontSize: 20, fontWeight: 300, color: 'grey.700', lineHeight: 2 }}
         >
           Consultoria especializada em milho, soja e sorgo. Aumentamos sua produtividade com
           tecnologia de ponta e expertise comprovada no campo.

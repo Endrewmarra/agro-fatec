@@ -1,4 +1,4 @@
-import { Box, Card, Typography } from '@mui/material'
+import { Box, Card, Typography, Paper } from '@mui/material'
 
 interface CardAppresentationProps {
   title: string
@@ -8,10 +8,9 @@ interface CardAppresentationProps {
 
 export const CardAppresentation = ({ title, description, icon }: CardAppresentationProps) => {
   return (
-    <Card
+    <Paper elevation={3}
       sx={{
         padding: 2,
-        boxShadow: '0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)',
         borderRadius: 3,
         width: 190,
       }}
@@ -28,6 +27,6 @@ export const CardAppresentation = ({ title, description, icon }: CardAppresentat
           </Typography>
         </Box>
       </Box>
-    </Card>
+    </Paper>
   )
 }

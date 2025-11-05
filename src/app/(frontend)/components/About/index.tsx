@@ -75,7 +75,7 @@ export const About = async () => {
           <Typography sx={{ color: 'black', fontSize: 20, fontWeight: 600 }}>
             Nossa Equipe de Especialistas
           </Typography>
-          <Typography sx={{ color: 'grey.800', fontSize: 16, fontWeight: 500 }}>
+          <Typography sx={{ color: 'grey.700', fontSize: 16, fontWeight: 500 }}>
             Contamos com uma equipe multidisciplinar de engenheiros agrônomos, especialistas em
             solos, entomologistas e consultores em agronegócio. Cada membro da nossa equipe possui
             vasta experiência prática e conhecimento científico atualizado.
