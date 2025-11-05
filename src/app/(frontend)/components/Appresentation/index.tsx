@@ -15,7 +15,7 @@ export const Appresentation = async () => {
         width: '100vw',
         paddingLeft: 11,
         paddingRight: 11,
-        bgcolor: 'success.main',
+        backgroundImage:'linear-gradient(to bottom, #EBFDF1 , #E1FDEB)',
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',
         alignItems: 'center',
@@ -98,7 +98,7 @@ export const Appresentation = async () => {
           style={{ borderRadius: 18 }}
         />
 
-        <Box sx={{ marginTop: -5, marginLeft: -4, display: 'flex', gap: 2 }}>
+        <Box sx={{ marginTop: -8, marginLeft: -4, display: 'flex', gap: 2 }}>
           <CardAppresentation
             description={`+${siteMetrics?.increased_productivity}%`}
             title="Produtividade"

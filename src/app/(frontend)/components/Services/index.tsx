@@ -70,7 +70,7 @@ export const Services = () => {
       <Box
         sx={{
           width: '100%',
-          backgroundImage: 'linear-gradient(to right, #00a63e , #026928ff)',
+          backgroundImage: 'linear-gradient(to right, #00A63E , #008236)',
           color: 'white',
           borderRadius: 4,
           padding: 4,

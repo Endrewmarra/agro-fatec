@@ -37,7 +37,7 @@ export const CardResults = ({ icon, title, description }: CardResultsProps) => {
       <Typography sx={{ fontSize: 16, color: 'black', fontWeight: 500, marginY: 2 }}>
         {title}
       </Typography>
-      <Typography sx={{ fontSize: 14, color: '#575757ff', fontWeight: 400 }}>
+      <Typography sx={{ fontSize: 14, color: 'grey.800', fontWeight: 400 }}>
         {description}
       </Typography>
     </Paper>
