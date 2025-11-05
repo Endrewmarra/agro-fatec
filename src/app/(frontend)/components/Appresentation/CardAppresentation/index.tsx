@@ -1,4 +1,4 @@
-import { Box, Card, Typography, Paper } from '@mui/material'
+import { Box, Typography, Paper } from '@mui/material'
 
 interface CardAppresentationProps {
   title: string

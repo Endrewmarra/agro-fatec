@@ -1,6 +1,7 @@
 import { Box, Typography, Button } from '@mui/material'
 import { Leaf, MapPin, Phone, Mail, Facebook, Instagram, Linkedin } from 'lucide-react'
 import Link from 'next/link'
+import {Links} from '../Links'
 
 export const Footer = () => {
   return (
@@ -93,191 +94,23 @@ export const Footer = () => {
         <Box sx={{ color: 'white' }}>
           Nossos Serviços
           <Box sx={{ lineHeight: 2 }}>
-            <Box
-              component={Link}
-              href={'/'}
-              sx={{
-                display: 'block',
-                textDecoration: 'none',
-                color: 'grey',
-                fontSize: '16px',
-                fontWeight: 500,
-                transition: 'color 0.2s',
-                '&:hover': { color: 'primary.light' },
-              }}
-            >
-              Consultoria em Milho
-            </Box>
-            <Box
-              component={Link}
-              href={'/'}
-              sx={{
-                display: 'block',
-                textDecoration: 'none',
-                color: 'grey',
-                fontSize: '16px',
-                fontWeight: 500,
-                transition: 'color 0.2s',
-                '&:hover': { color: 'primary.light' },
-              }}
-            >
-              Consultoria em Soja
-            </Box>
-            <Box
-              component={Link}
-              href={'/'}
-              sx={{
-                display: 'block',
-                textDecoration: 'none',
-                color: 'grey',
-                fontSize: '16px',
-                fontWeight: 500,
-                transition: 'color 0.2s',
-                '&:hover': { color: 'secondary.main' },
-              }}
-            >
-              Consultoria em Sorgo
-            </Box>
-            <Box
-              component={Link}
-              href={'/'}
-              sx={{
-                display: 'block',
-                textDecoration: 'none',
-                color: 'grey',
-                fontSize: '16px',
-                fontWeight: 500,
-                transition: 'color 0.2s',
-                '&:hover': { color: 'secondary.main' },
-              }}
-            >
-              Análise de Solo
-            </Box>
-            <Box
-              component={Link}
-              href={'/'}
-              sx={{
-                display: 'block',
-                textDecoration: 'none',
-                color: 'grey',
-                fontSize: '16px',
-                fontWeight: 500,
-                transition: 'color 0.2s',
-                '&:hover': { color: 'secondary.main' },
-              }}
-            >
-              Manejo Integrado
-            </Box>
-            <Box
-              component={Link}
-              href={'/'}
-              sx={{
-                display: 'block',
-                textDecoration: 'none',
-                color: 'grey',
-                fontSize: '16px',
-                fontWeight: 500,
-                transition: 'color 0.2s',
-                '&:hover': { color: 'secondary.main' },
-              }}
-            >
-              Monioramento de Safras
-            </Box>
+            <Links rote='/' text='Consultoria em Milho' />
+            <Links rote='/' text='Consultoria em Soja' />
+            <Links rote='/' text='Consultoria em Sorgo' />
+            <Links rote='/' text='Análise de Solo' />
+            <Links rote='/' text='Manejo Integrado' />
+            <Links rote='/' text='Monitoramento de Safra' />            
           </Box>
         </Box>
         <Box sx={{ color: 'white' }}>
           Empresa
           <Box sx={{ lineHeight: 2 }}>
-            <Box
-              component={Link}
-              href={'/'}
-              sx={{
-                display: 'block',
-                textDecoration: 'none',
-                color: 'grey',
-                fontSize: '16px',
-                fontWeight: 500,
-                transition: 'color 0.2s',
-                '&:hover': { color: 'secondary.main' },
-              }}
-            >
-              Sobre Nós
-            </Box>
-            <Box
-              component={Link}
-              href={'/'}
-              sx={{
-                display: 'block',
-                textDecoration: 'none',
-                color: 'grey',
-                fontSize: '16px',
-                fontWeight: 500,
-                transition: 'color 0.2s',
-                '&:hover': { color: 'secondary.main' },
-              }}
-            >
-              Nossa Equipe
-            </Box>
-            <Box
-              component={Link}
-              href={'/'}
-              sx={{
-                display: 'block',
-                textDecoration: 'none',
-                color: 'grey',
-                fontSize: '16px',
-                fontWeight: 500,
-                transition: 'color 0.2s',
-                '&:hover': { color: 'secondary.main' },
-              }}
-            >
-              Casos de sucesso
-            </Box>
-            <Box
-              component={Link}
-              href={'/'}
-              sx={{
-                display: 'block',
-                textDecoration: 'none',
-                color: 'grey',
-                fontSize: '16px',
-                fontWeight: 500,
-                transition: 'color 0.2s',
-                '&:hover': { color: 'secondary.main' },
-              }}
-            >
-              Artigos e Blog
-            </Box>
-            <Box
-              component={Link}
-              href={'/'}
-              sx={{
-                display: 'block',
-                textDecoration: 'none',
-                color: 'grey',
-                fontSize: '16px',
-                fontWeight: 500,
-                transition: 'color 0.2s',
-                '&:hover': { color: 'secondary.main' },
-              }}
-            >
-              Carreiras
-            </Box>
-            <Box
-              component={Link}
-              href={'/'}
-              sx={{
-                display: 'block',
-                textDecoration: 'none',
-                color: 'grey',
-                fontSize: '16px',
-                fontWeight: 500,
-                transition: 'color 0.2s',
-                '&:hover': { color: 'secondary.main' },
-              }}
-            >
-              Política de Privacidade
-            </Box>
+            <Links rote='/' text='Sobre Nós' />
+            <Links rote='/' text='Nossa Equipe' />
+            <Links rote='/' text='Casos de Sucesso' />
+            <Links rote='/' text='Artigos e Blog' />
+            <Links rote='/' text='Carreiras' />
+            <Links rote='/' text='Política de Privacidde' />
           </Box>
         </Box>
 
