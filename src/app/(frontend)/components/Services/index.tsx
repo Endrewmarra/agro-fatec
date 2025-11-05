@@ -1,4 +1,4 @@
-import { Box, Typography, Button } from '@mui/material'
+import { Box, Typography, Button , Grid} from '@mui/material'
 import { Wheat, Sprout, Zap } from 'lucide-react'
 import { CardServices } from './CardServices'
 import { Title } from '../Title'
@@ -21,14 +21,10 @@ export const Services = () => {
           soluções personalizadas para cada cultura."
       />
 
-      <Box
-        sx={{
-          display: 'grid',
-          gridTemplateColumns: '1fr 1fr 1fr',
-          gap: 4,
-          textAlign: 'left',
-        }}
+      <Grid container spacing={4}
+        sx={{textAlign: 'left' }}
       >
+        <Grid size={4}>
         <CardServices
           src="https://images.unsplash.com/photo-1655131468751-c4210f1c4c5e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb3JuJTIwZmllbGQlMjBhZ3JpY3VsdHVyZXxlbnwxfHx8fDE3NTc2MTgwMDd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
           alt="Plantação de Milho"
@@ -41,7 +37,8 @@ export const Services = () => {
           Iten4="Otimização de irrigação"
           resume="Aumento médio de 25% na produtividade"
         />
-
+        </Grid>
+        <Grid size={4}>
         <CardServices
           src="https://images.unsplash.com/photo-1562702076-c719c8796b8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzb3liZWFuJTIwZmFybXxlbnwxfHx8fDE3NTc2MTgzNTd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
           alt="Plantação de Soja"
@@ -54,7 +51,8 @@ export const Services = () => {
           Iten4="Monitoramento de doenças"
           resume="Redução de 40% nos custos de produção"
         />
-
+      </Grid>
+      <Grid size={4}>
         <CardServices
           src="https://images.unsplash.com/photo-1581092335878-2d9ff86ca2bf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhZ3JpY3VsdHVyZSUyMHRlY2hub2xvZ3l8ZW58MXx8fHwxNzU3NjE4MzU4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
           alt="Plantação de Sorgo"
@@ -67,7 +65,8 @@ export const Services = () => {
           Iten4="Integração lavoura-pecuária"
           resume="35% maior resistência à estiagem"
         />
-      </Box>
+      </Grid>
+      </Grid>
 
       <Box
         sx={{
@@ -93,7 +92,7 @@ export const Services = () => {
             color: 'primary.light',
             textTransform: 'capitalize',
             margin: 2,
-            fontSize: 12,
+            fontSize: 14,
             fontWeight: 600,
             padding: 1,
             borderRadius: 2,

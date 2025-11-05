@@ -16,6 +16,7 @@ export const CardResults = ({ icon, title, description }: CardResultsProps) => {
         paddingY: 2,
         borderRadius: 3,
         color: 'primary.light',
+        paddingRight:4
       }}
     >
       <Box
@@ -29,6 +30,7 @@ export const CardResults = ({ icon, title, description }: CardResultsProps) => {
           borderRadius: 2,
           transition: '0,2s',
           '&:hover': { backgroundColor: 'secondary.main', transition: '0.2s' },
+          
         }}
       >
         <Box
@@ -37,6 +39,7 @@ export const CardResults = ({ icon, title, description }: CardResultsProps) => {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
+            
           }}
         >
           {icon}

@@ -62,26 +62,26 @@ export const CardServices = ({
         <Box>
           <Typography
             variant="h3"
-            sx={{ fontSize: 16, fontWeight: 600, marginBottom: -2, marginLeft: 1 }}
+            sx={{ fontSize: 16, fontWeight: 600, marginBottom: 0, marginLeft: 1 }}
           >
             Principais Benefícios:
           </Typography>
-          <List sx={{ color: 'grey.600', fontSize: 14, lineHeight: 1 }}>
-            <ListItem>
-              <ListItemIcon sx={{ scale: 2, marginRight: -5 }}>
+          <List sx={{ color: 'grey.600', fontSize: 14, lineHeight: 1,}}>
+            <ListItem sx={{ marginBottom:-2}}>
+              <ListItemIcon sx={{ scale: 2, marginRight: -5,}}>
                 <Dot color="#00a63e" />
               </ListItemIcon>
               {Iten1}
             </ListItem>
 
-            <ListItem>
+            <ListItem sx={{ marginBottom:-2}}>
               <ListItemIcon sx={{ scale: 2, marginRight: -5 }}>
                 <Dot color="#00a63e" />
               </ListItemIcon>
               {Iten2}
             </ListItem>
 
-            <ListItem>
+            <ListItem sx={{ marginBottom:-2}}>
               <ListItemIcon sx={{ scale: 2, marginRight: -5 }}>
                 <Dot color="#00a63e" />
               </ListItemIcon>

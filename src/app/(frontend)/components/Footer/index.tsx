@@ -1,4 +1,4 @@
-import { Box, Typography, Button } from '@mui/material'
+import { Box, Typography, Button, Grid } from '@mui/material'
 import { Leaf, MapPin, Phone, Mail, Facebook, Instagram, Linkedin } from 'lucide-react'
 import { Links } from '../Links'
 
@@ -51,8 +51,8 @@ export const Footer = () => {
             Especialistas em consultoria agronômica para milho, soja e sorgo. Transformamos
             conhecimento em resultados práticos para o seu agronegócio.
           </Typography>
-          {/* Alinhar as redes sociais */}
-          <Box sx={{ display: 'flex', justifyItems: 'left' }}>
+          
+          <Box sx={{ marginLeft:-2}}>
             <Button
               variant="outlined"
               sx={{
@@ -167,8 +167,16 @@ export const Footer = () => {
           </Typography>
         </Box>
       </Box>
-      {/* Add copyright */}
+     
       <Box sx={{ borderTop: '2px solid #364153' }}></Box>
+      <Grid container spacing={2} sx={{color:'grey.500', marginTop:4,fontSize:14}}>
+        <Grid size={8} >© 2024 AgroConsult. Todos os direitos reservados.</Grid>
+        <Grid size={4}  sx={{display:'flex', gap:2,}}>
+          <Links rote='/' text='Termos de Uso'  />
+          <Links rote='/' text='Política de Privacidade' />
+          <Links rote='/' text='Cookies' />
+        </Grid>
+      </Grid>
     </Box>
   )
 }

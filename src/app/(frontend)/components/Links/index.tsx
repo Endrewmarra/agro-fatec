@@ -14,7 +14,7 @@ export const Links = ({ rote, text }: LinksProps) => {
       sx={{
         display: 'block',
         textDecoration: 'none',
-        color: 'grey',
+        color: 'grey.500',
         fontSize: '16px',
         fontWeight: 500,
         transition: 'color 0.2s',

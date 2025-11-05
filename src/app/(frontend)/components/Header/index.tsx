@@ -1,8 +1,6 @@
-import { theme } from '@/app/config/theme'
 import { Box, Button, Typography } from '@mui/material'
 import { Leaf } from 'lucide-react'
 import Link from 'next/link'
-import { Links } from '../Links'
 
 export const Header = () => {
   return (

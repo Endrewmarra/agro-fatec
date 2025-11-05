@@ -1,4 +1,13 @@
-import { Box, Typography, List, ListItem, ListItemIcon, ListItemText, Button } from '@mui/material'
+import {
+  Box,
+  Typography,
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
+  Button,
+  Grid,
+} from '@mui/material'
 import { Lightbulb, Shield, Target, Users, Dot, ArrowRight } from 'lucide-react'
 import { Title } from '../Title'
 import { CardStatitics } from './CardStatitics'
@@ -28,47 +37,63 @@ export const About = async () => {
           propriedades rurais através de soluções inovadoras e sustentáveis."
       />
 
-      <Box sx={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', gap: 3 }}>
-        <CardStatitics
-          data={`${siteMetrics?.properties_served}+`}
-          description="Propriedades Atendidas"
-        />
-        <CardStatitics
-          data={`${new Date().getFullYear() - 2010} `}
-          description="Anos de Expêriencia"
-        />
-        <CardStatitics
-          data={`${siteMetrics?.increased_productivity}%`}
-          description="Aumento Médio de Produtividade"
-        />
-        <CardStatitics
-          data={`${siteMetrics?.customer_satisfication}%`}
-          description="Satisfação dosClientes"
-        />
-      </Box>
+      <Grid container spacing={3} sx={{ width: '100%' }}>
+        <Grid size={3}>
+          <CardStatitics
+            data={`${siteMetrics?.properties_served}+`}
+            description="Propriedades Atendidas"
+          />
+        </Grid>
+        <Grid size={3}>
+          <CardStatitics
+            data={`${new Date().getFullYear() - 2010} `}
+            description="Anos de Expêriencia"
+          />
+        </Grid>
+        <Grid size={3}>
+          <CardStatitics
+            data={`${siteMetrics?.increased_productivity}%`}
+            description="Aumento Médio de Produtividade"
+          />
+        </Grid>
+        <Grid size={3}>
+          <CardStatitics
+            data={`${siteMetrics?.customer_satisfication}%`}
+            description="Satisfação dosClientes"
+          />
+        </Grid>
+      </Grid>
 
-      <Box sx={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr 1fr', gap: 3, marginTop: 6 }}>
-        <CardResults
-          icon={<Target />}
-          title="Resultados Comprovados"
-          description="Mais de 15 anos transformando propriedades rurais em negócios altamente produtivos."
-        />
-        <CardResults
-          icon={<Lightbulb />}
-          title="Inovação Constante"
-          description="Utilizamos as mais recentes tecnologias e metodologias do agronegócio mundial."
-        />
-        <CardResults
-          icon={<Shield />}
-          title="Sustentabilidade"
-          description="Práticas que respeitam o meio ambiente e garantem produtividade a longo prazo."
-        />
-        <CardResults
-          icon={<Users />}
-          title="Parceria Verdadeira"
-          description="Acompanhamos nossos clientes em todas as etapas, do planejamento à colheita."
-        />
-      </Box>
+      <Grid container spacing={3} sx={{ marginTop: 8, width: '100%' }}>
+        <Grid size={3}>
+          <CardResults
+            icon={<Target />}
+            title="Resultados Comprovados"
+            description="Mais de 15 anos transformando propriedades rurais em negócios altamente produtivos."
+          />
+        </Grid>
+        <Grid size={3}>
+          <CardResults
+            icon={<Lightbulb />}
+            title="Inovação Constante"
+            description="Utilizamos as mais recentes tecnologias e metodologias do agronegócio mundial."
+          />
+        </Grid>
+        <Grid size={3}>
+          <CardResults
+            icon={<Shield />}
+            title="Sustentabilidade"
+            description="Práticas que respeitam o meio ambiente e garantem produtividade a longo prazo."
+          />
+        </Grid>
+        <Grid size={3}>
+          <CardResults
+            icon={<Users />}
+            title="Parceria Verdadeira"
+            description="Acompanhamos nossos clientes em todas as etapas, do planejamento à colheita."
+          />
+        </Grid>
+      </Grid>
 
       <Box sx={{ display: 'grid', gridTemplateColumns: '1fr 1fr', marginY: 6 }}>
         <Box sx={{ textAlign: 'left', width: '100%', paddingRight: 2 }}>
@@ -120,6 +145,7 @@ export const About = async () => {
               marginY: 4,
               bgcolor: 'primary.light',
               '&:hover': { bgcolor: 'primary.main' },
+              scale: 0.9,
             }}
           >
             Conheça Nossa Equipe <ArrowRight style={{ scale: 0.8, marginLeft: 15 }} />
