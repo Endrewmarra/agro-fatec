@@ -121,7 +121,7 @@ export const Footer = () => {
               <MapPin color="#00a63e" />
 
               <Typography
-                variant="body1"
+                variant="h6"
                 sx={{
                   display: 'inline',
                   verticalAlign: 'top',
