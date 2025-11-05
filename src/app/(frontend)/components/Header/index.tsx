@@ -53,16 +53,16 @@ export const Header = () => {
       >
         
         <Box component={Link} href="#"  sx={{ textDecoration: 'none', color: 'primary.main',transition: 'color 0.2s',
-            '&:hover': { color: 'secondary.main' } }}>
+            '&:hover': { color: 'primary.light' } }}>
           Home
         </Box>
 
-        <Box component={Link} href="/Artigos" sx={{ textDecoration: 'none', color:  theme.palette.grey[700], transition: 'color 0.2s','&:hover': { color: 'primary.main' } }}>
+        <Box component={Link} href="/Artigos" sx={{ textDecoration: 'none', color: 'grey.700', transition: 'color 0.2s','&:hover': { color: 'primary.main' } }}>
           Artigos
         </Box>
         <Box component={Link}
           href="/fale-conosco"
-          sx={{ textDecoration: 'none', color: theme.palette.grey[700], transition: 'color 0.2s','&:hover': { color: 'primary.main' }}}
+          sx={{ textDecoration: 'none', color:'grey.700', transition: 'color 0.2s','&:hover': { color: 'primary.main' }}}
         >
           Fale Conosco
         </Box>
@@ -71,8 +71,7 @@ export const Header = () => {
       <Box>
         <Button
           variant="contained"
-          color="secondary"
-          sx={{ borderRadius: 2, textTransform: 'none', boxShadow: 'none' }}
+          sx={{ borderRadius: 2, textTransform: 'none', boxShadow: 'none', backgroundColor:'primary.light', '&:hover':{backgroundColor:'primary.main', boxShadow:'none'}}}
         >
           Solicitar Consultoria
         </Button>

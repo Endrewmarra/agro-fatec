@@ -114,8 +114,7 @@ export const About = async () => {
           </List>
           <Button
             variant="contained"
-            color="secondary"
-            sx={{ textTransform: 'none', borderRadius: 2, marginY: 4 }}
+            sx={{ textTransform: 'none', borderRadius: 2, marginY: 4, bgcolor:'primary.light','&:hover':{bgcolor:'primary.main'} }}
           >
             Conheça Nossa Equipe <ArrowRight style={{ scale: 0.8, marginLeft: 15 }} />
           </Button>

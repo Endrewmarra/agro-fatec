@@ -44,7 +44,7 @@ export const CardServices = ({ src, alt, icon, title, description, Iten1, Iten2,
               scale: 1.3,
             }}
           >
-            <Box sx={{color:'secondary.main', display:'flex', alignContent:'center'}}>{icon}</Box>
+            <Box sx={{color:'primary.light', display:'flex', alignContent:'center'}}>{icon}</Box>
           </Box>
           <CardMedia
             sx={{ '&:hover': { scale: 1.1, transition: '0.2s' }, transition: '0.2s' }}
@@ -97,12 +97,13 @@ export const CardServices = ({ src, alt, icon, title, description, Iten1, Iten2,
             <Box sx={{ textAlign: 'center' }}>
               <Typography
                 sx={{
-                  backgroundColor: '#e7ffecff',
+                  backgroundColor: 'secondary.light',
                   borderRadius: 2,
                   color: 'primary.main',
                   fontSize: 14,
                   paddingY: 1,
                   width: '100%',
+                  fontWeight:600
                 }}
               >
                 {resume}
@@ -110,17 +111,17 @@ export const CardServices = ({ src, alt, icon, title, description, Iten1, Iten2,
               <Button
                 sx={{
                   width: '100%',
-                  border: '1px solid #00a63e',
-                  color: 'secondary.main',
+                  border: '1px solid',
+                  color: 'primary.light',
                   fontSize: 14,
                   marginTop: 2,
                   display: 'flex',
                   gap: 1,
                   transition: '0.2s',
-                  '&:hover': { gap: 4, transition: '0.2s' },
+                  '&:hover': { gap: 4, transition: '0.2s' , color:'black', bgcolor:'secondary.light'},
                 }}
               >
-                <Typography>Saiba Mais</Typography>
+                <Typography sx={{fontSize:14, textTransform:'capitalize'}}>Saiba Mais</Typography>
 
                 <ArrowRight alignmentBaseline="middle" />
               </Button>

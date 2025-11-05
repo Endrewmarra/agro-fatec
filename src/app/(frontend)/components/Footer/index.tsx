@@ -9,7 +9,7 @@ export const Footer = () => {
         width: '100vw',
         paddingX: 15,
         paddingY: 10,
-        backgroundColor: '#101828',
+        backgroundColor: 'secondary.dark',
         zIndex: 1,
       }}
     >
@@ -25,7 +25,7 @@ export const Footer = () => {
           <Box sx={{ display: 'flex', alignItems: 'center', marginBottom: 2 }}>
             <Box
               sx={{
-                backgroundColor: 'secondary.main',
+                backgroundColor: 'primary.light',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -103,7 +103,7 @@ export const Footer = () => {
                 fontSize: '16px',
                 fontWeight: 500,
                 transition: 'color 0.2s',
-                '&:hover': { color: 'secondary.main' },
+                '&:hover': { color: 'primary.light' },
               }}
             >
               Consultoria em Milho
@@ -118,7 +118,7 @@ export const Footer = () => {
                 fontSize: '16px',
                 fontWeight: 500,
                 transition: 'color 0.2s',
-                '&:hover': { color: 'secondary.main' },
+                '&:hover': { color: 'primary.light' },
               }}
             >
               Consultoria em Soja

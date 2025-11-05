@@ -85,15 +85,17 @@ export const Services = () => {
           estratégias personalizadas para maximizar seus resultados.
         </Typography>
         <Button
-          variant="outlined"
+          variant="text"
           sx={{
             backgroundColor: 'white',
-            color: 'secondary.main',
+            color: 'primary.light',
+            textTransform:'capitalize',
             margin: 2,
             fontSize: 12,
             fontWeight: 600,
             padding: 1,
             borderRadius: 2,
+            '&:hover':{bgcolor:'grey.200'}
           }}
         >
           Agendar Consultoria Gratuita

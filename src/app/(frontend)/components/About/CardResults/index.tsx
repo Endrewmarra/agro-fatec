@@ -14,12 +14,12 @@ export const CardResults = ({ icon, title, description }: CardResultsProps) => {
         paddingX: 2,
         paddingY: 2,
         borderRadius: 3,
-        color: 'secondary.main',
+        color: 'primary.light',
       }}
     >
       <Box
         sx={{
-          backgroundColor: 'success.main',
+          backgroundColor: 'secondary.light',
           display:'flex',
           justifyContent:'center',
           alignItems:'center',
@@ -27,7 +27,7 @@ export const CardResults = ({ icon, title, description }: CardResultsProps) => {
           height: 40,
           borderRadius: 2,
           transition: '0,2s',
-          '&:hover': { backgroundColor: 'success.dark', transition: '0.2s' },
+          '&:hover': { backgroundColor: 'secondary.main', transition: '0.2s' },
         }}
       >
         <Box sx={{ color: 'secundary.main',display:'flex',

@@ -16,13 +16,13 @@ export const CardAppresentation = ({ title, description, icon }: CardAppresentat
       }}
     >
       <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'left', gap: 2 }}>
-        <Box sx={{ color: 'secondary.main' }}>{icon}</Box>
+        <Box sx={{ color: 'primary.light' }}>{icon}</Box>
 
         <Box >
           <Typography variant="h6" sx={{ fontSize: 12, fontWeight: 400, color: 'grey.600' }}>
             {title}
           </Typography>
-          <Typography variant="body1" sx={{ fontSize: 16, fontWeight: 500,color:'primary.main' }}>
+          <Typography variant="body1" sx={{ fontSize: 16, fontWeight: 600,color:'primary.main' }}>
             {description}
           </Typography>
         </Box>

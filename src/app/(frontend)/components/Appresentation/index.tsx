@@ -74,15 +74,14 @@ export const Appresentation = async () => {
         <Box sx={{ display: 'flex', gap: 3 }}>
           <Button
             variant="contained"
-            color="secondary"
-            sx={{ textTransform: 'none', borderRadius: 2 }}
+            sx={{ textTransform: 'none', borderRadius: 2,bgcolor:'primary.light',boxShadow:'none','&:hover':{bgcolor:'primary.main', boxShadow:'none'} }}
           >
             Solicitar Consultoria Gratuita
           </Button>
           <Button
             variant="outlined"
-            color="secondary"
-            sx={{ textTransform: 'none', backgroundColor: 'white', borderRadius: 2 }}
+            sx={{ textTransform: 'none', backgroundColor: 'white', borderRadius: 2,borderColor:'primary.main',color:'primary.light','&:hover':{bgcolor:'transparent', color:'black'
+            } }}
           >
             Conhecer Nossos Casos
           </Button>

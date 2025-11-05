@@ -11,7 +11,7 @@ interface CardAppresentationProps {
 export const Title = ({ sectionTitle ,title, description }: CardAppresentationProps) => {
     return(
         <Box sx={{marginBottom:8,}}>
-            <Chip label={sectionTitle} color='success' size='small' sx={{color:'primary.main', fontWeight:600, fontSize:12, marginBottom:2}}/>
+            <Chip label={sectionTitle} size='small' sx={{ bgcolor:'secondary.light',color:'primary.main', fontWeight:600, fontSize:12, marginBottom:2}}/>
             <Typography sx={{ fontSize: 36, fontWeight: 'bold', marginBottom: 2, color:'black'}}>{title}</Typography>
             <Typography sx={{ color: 'grey.700', paddingX: 35 }}>{description}</Typography>
         </Box>
