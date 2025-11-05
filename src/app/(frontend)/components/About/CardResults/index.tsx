@@ -7,8 +7,9 @@ interface CardResultsProps {
 }
 
 export const CardResults = ({ icon, title, description }: CardResultsProps) => {
-  return ( 
-    <Paper elevation={3}
+  return (
+    <Paper
+      elevation={3}
       sx={{
         textAlign: 'left',
         paddingX: 2,
@@ -20,9 +21,9 @@ export const CardResults = ({ icon, title, description }: CardResultsProps) => {
       <Box
         sx={{
           backgroundColor: 'secondary.light',
-          display:'flex',
-          justifyContent:'center',
-          alignItems:'center',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
           width: 40,
           height: 40,
           borderRadius: 2,
@@ -30,14 +31,21 @@ export const CardResults = ({ icon, title, description }: CardResultsProps) => {
           '&:hover': { backgroundColor: 'secondary.main', transition: '0.2s' },
         }}
       >
-        <Box sx={{ color: 'secundary.main',display:'flex',
-          justifyContent:'center',
-          alignItems:'center', }}>{icon}</Box>
+        <Box
+          sx={{
+            color: 'secundary.main',
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+        >
+          {icon}
+        </Box>
       </Box>
-      <Typography sx={{ fontSize: 16, color: 'black', fontWeight: 500, marginY: 2 }}>
+      <Typography variant="h2" sx={{ fontSize: 16, color: 'black', fontWeight: 500, marginY: 2 }}>
         {title}
       </Typography>
-      <Typography sx={{ fontSize: 14, color: 'grey.800', fontWeight: 400 }}>
+      <Typography variant="body1" sx={{ fontSize: 14, color: 'grey.800', fontWeight: 400 }}>
         {description}
       </Typography>
     </Paper>

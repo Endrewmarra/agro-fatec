@@ -16,8 +16,8 @@ return(
             height: '150px',
           }}
         >
-          <Typography sx={{ fontSize: 32, fontWeight: 600 }}> {data} </Typography>
-          <Typography sx={{ fontSize: 14, color: 'grey.700' }}>{description}</Typography>
+          <Typography variant='h1' sx={{ fontSize: 32, fontWeight: 600 }}> {data} </Typography>
+          <Typography variant='body1' sx={{ fontSize: 14, color: 'grey.700' }}>{description}</Typography>
         </Paper>
 
 

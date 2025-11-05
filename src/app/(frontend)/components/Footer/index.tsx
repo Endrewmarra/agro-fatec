@@ -1,7 +1,6 @@
 import { Box, Typography, Button } from '@mui/material'
 import { Leaf, MapPin, Phone, Mail, Facebook, Instagram, Linkedin } from 'lucide-react'
-import Link from 'next/link'
-import {Links} from '../Links'
+import { Links } from '../Links'
 
 export const Footer = () => {
   return (
@@ -46,6 +45,7 @@ export const Footer = () => {
             </Typography>
           </Box>
           <Typography
+            variant="body1"
             sx={{ color: 'grey.500', fontSize: '16px', fontWeight: 500, lineHeight: 1.5 }}
           >
             Especialistas em consultoria agronômica para milho, soja e sorgo. Transformamos
@@ -94,23 +94,23 @@ export const Footer = () => {
         <Box sx={{ color: 'white' }}>
           Nossos Serviços
           <Box sx={{ lineHeight: 2 }}>
-            <Links rote='/' text='Consultoria em Milho' />
-            <Links rote='/' text='Consultoria em Soja' />
-            <Links rote='/' text='Consultoria em Sorgo' />
-            <Links rote='/' text='Análise de Solo' />
-            <Links rote='/' text='Manejo Integrado' />
-            <Links rote='/' text='Monitoramento de Safra' />            
+            <Links rote="/" text="Consultoria em Milho" />
+            <Links rote="/" text="Consultoria em Soja" />
+            <Links rote="/" text="Consultoria em Sorgo" />
+            <Links rote="/" text="Análise de Solo" />
+            <Links rote="/" text="Manejo Integrado" />
+            <Links rote="/" text="Monitoramento de Safra" />
           </Box>
         </Box>
         <Box sx={{ color: 'white' }}>
           Empresa
           <Box sx={{ lineHeight: 2 }}>
-            <Links rote='/' text='Sobre Nós' />
-            <Links rote='/' text='Nossa Equipe' />
-            <Links rote='/' text='Casos de Sucesso' />
-            <Links rote='/' text='Artigos e Blog' />
-            <Links rote='/' text='Carreiras' />
-            <Links rote='/' text='Política de Privacidde' />
+            <Links rote="/" text="Sobre Nós" />
+            <Links rote="/" text="Nossa Equipe" />
+            <Links rote="/" text="Casos de Sucesso" />
+            <Links rote="/" text="Artigos e Blog" />
+            <Links rote="/" text="Carreiras" />
+            <Links rote="/" text="Política de Privacidde" />
           </Box>
         </Box>
 
@@ -121,6 +121,7 @@ export const Footer = () => {
               <MapPin color="#00a63e" />
 
               <Typography
+                variant="body1"
                 sx={{
                   display: 'inline',
                   verticalAlign: 'top',
@@ -130,10 +131,10 @@ export const Footer = () => {
                 }}
               >
                 Rua do Agronegócio, 123
-                <Typography sx={{ marginLeft: 5, fontSize: 16, marginBottom: 1 }}>
+                <Typography variant="body2" sx={{ marginLeft: 5, fontSize: 16, marginBottom: 1 }}>
                   Ribeirão Preto, SP
                 </Typography>
-                <Typography sx={{ marginLeft: 5, fontSize: 16, marginBottom: 1 }}>
+                <Typography variant="body2" sx={{ marginLeft: 5, fontSize: 16, marginBottom: 1 }}>
                   CEP: 14000-000
                 </Typography>
               </Typography>
@@ -141,6 +142,7 @@ export const Footer = () => {
             <Box sx={{ marginBottom: 1 }}>
               <Phone color="#00a63e" />
               <Typography
+                variant="body1"
                 sx={{ display: 'inline', verticalAlign: 'top', marginLeft: 2, fontSize: 16 }}
               >
                 (16) 3333-4444
@@ -149,6 +151,7 @@ export const Footer = () => {
             <Box sx={{ marginBottom: 1 }}>
               <Mail color="#00a63e" />
               <Typography
+                variant="body1"
                 sx={{ display: 'inline', verticalAlign: 'top', marginLeft: 2, fontSize: 16 }}
               >
                 contato@agroconsult.com.br
@@ -156,10 +159,12 @@ export const Footer = () => {
             </Box>
           </Box>
           Horário de Atendimento
-          <Typography sx={{ color: 'grey.500', fontSize: 14 }}>
+          <Typography variant="body2" sx={{ color: 'grey.500', fontSize: 14 }}>
             Segunda a Sexta: 8h às 18h
           </Typography>
-          <Typography sx={{ color: 'grey.500', fontSize: 14 }}>Sábado: 8h às 12h</Typography>
+          <Typography variant="body2" sx={{ color: 'grey.500', fontSize: 14 }}>
+            Sábado: 8h às 12h
+          </Typography>
         </Box>
       </Box>
       {/* Add copyright */}

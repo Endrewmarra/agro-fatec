@@ -2,8 +2,7 @@ import { theme } from '@/app/config/theme'
 import { Box, Button, Typography } from '@mui/material'
 import { Leaf } from 'lucide-react'
 import Link from 'next/link'
-
-
+import { Links } from '../Links'
 
 export const Header = () => {
   return (
@@ -51,18 +50,40 @@ export const Header = () => {
           textDecoration: 'none',
         }}
       >
-        
-        <Box component={Link} href="#"  sx={{ textDecoration: 'none', color: 'primary.main',transition: 'color 0.2s',
-            '&:hover': { color: 'primary.light' } }}>
+        <Box
+          component={Link}
+          href="#"
+          sx={{
+            textDecoration: 'none',
+            color: 'primary.main',
+            transition: 'color 0.2s',
+            '&:hover': { color: 'primary.light' },
+          }}
+        >
           Home
         </Box>
 
-        <Box component={Link} href="/Artigos" sx={{ textDecoration: 'none', color: 'grey.700', transition: 'color 0.2s','&:hover': { color: 'primary.main' } }}>
+        <Box
+          component={Link}
+          href="/Artigos"
+          sx={{
+            textDecoration: 'none',
+            color: 'grey.700',
+            transition: 'color 0.2s',
+            '&:hover': { color: 'primary.main' },
+          }}
+        >
           Artigos
         </Box>
-        <Box component={Link}
+        <Box
+          component={Link}
           href="/fale-conosco"
-          sx={{ textDecoration: 'none', color:'grey.700', transition: 'color 0.2s','&:hover': { color: 'primary.main' }}}
+          sx={{
+            textDecoration: 'none',
+            color: 'grey.700',
+            transition: 'color 0.2s',
+            '&:hover': { color: 'primary.main' },
+          }}
         >
           Fale Conosco
         </Box>
@@ -71,7 +92,13 @@ export const Header = () => {
       <Box>
         <Button
           variant="contained"
-          sx={{ borderRadius: 2, textTransform: 'none', boxShadow: 'none', backgroundColor:'primary.light', '&:hover':{backgroundColor:'primary.main', boxShadow:'none'}}}
+          sx={{
+            borderRadius: 2,
+            textTransform: 'none',
+            boxShadow: 'none',
+            backgroundColor: 'primary.light',
+            '&:hover': { backgroundColor: 'primary.main', boxShadow: 'none' },
+          }}
         >
           Solicitar Consultoria
         </Button>

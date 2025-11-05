@@ -15,7 +15,7 @@ export const Appresentation = async () => {
         width: '100vw',
         paddingLeft: 11,
         paddingRight: 11,
-        backgroundImage:'linear-gradient(to bottom, #EBFDF1 , #E1FDEB)',
+        backgroundImage: 'linear-gradient(to bottom, #EBFDF1 , #E1FDEB)',
         display: 'grid',
         gridTemplateColumns: '1fr 1fr',
         alignItems: 'center',
@@ -29,8 +29,8 @@ export const Appresentation = async () => {
         <Typography variant="h1" sx={{ fontSize: 48, fontWeight: 600 }}>
           Maximize o Potencial do seu{' '}
           <Typography
+            variant="body1"
             sx={{ color: 'primary.main', fontSize: 48, fontWeight: 600, display: 'inline' }}
-          
           >
             Agronegócio
           </Typography>
@@ -74,14 +74,26 @@ export const Appresentation = async () => {
         <Box sx={{ display: 'flex', gap: 3 }}>
           <Button
             variant="contained"
-            sx={{ textTransform: 'none', borderRadius: 2,bgcolor:'primary.light',boxShadow:'none','&:hover':{bgcolor:'primary.main', boxShadow:'none'} }}
+            sx={{
+              textTransform: 'none',
+              borderRadius: 2,
+              bgcolor: 'primary.light',
+              boxShadow: 'none',
+              '&:hover': { bgcolor: 'primary.main', boxShadow: 'none' },
+            }}
           >
             Solicitar Consultoria Gratuita
           </Button>
           <Button
             variant="outlined"
-            sx={{ textTransform: 'none', backgroundColor: 'white', borderRadius: 2,borderColor:'primary.main',color:'primary.light','&:hover':{bgcolor:'transparent', color:'black'
-            } }}
+            sx={{
+              textTransform: 'none',
+              backgroundColor: 'white',
+              borderRadius: 2,
+              borderColor: 'primary.main',
+              color: 'primary.light',
+              '&:hover': { bgcolor: 'transparent', color: 'black' },
+            }}
           >
             Conhecer Nossos Casos
           </Button>

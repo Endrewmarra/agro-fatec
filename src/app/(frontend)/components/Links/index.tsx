@@ -6,7 +6,7 @@ interface LinksProps {
   text: string
 }
 
-export const Links = ({ rote, text }:LinksProps) => {
+export const Links = ({ rote, text }: LinksProps) => {
   return (
     <Box
       component={Link}

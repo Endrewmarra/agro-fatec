@@ -72,10 +72,10 @@ export const About = async () => {
 
       <Box sx={{ display: 'grid', gridTemplateColumns: '1fr 1fr', marginY: 6 }}>
         <Box sx={{ textAlign: 'left', width: '100%', paddingRight: 2 }}>
-          <Typography sx={{ color: 'black', fontSize: 20, fontWeight: 600 }}>
+          <Typography variant="h2" sx={{ color: 'black', fontSize: 20, fontWeight: 600 }}>
             Nossa Equipe de Especialistas
           </Typography>
-          <Typography sx={{ color: 'grey.700', fontSize: 16, fontWeight: 500 }}>
+          <Typography variant="body1" sx={{ color: 'grey.700', fontSize: 16, fontWeight: 500 }}>
             Contamos com uma equipe multidisciplinar de engenheiros agrônomos, especialistas em
             solos, entomologistas e consultores em agronegócio. Cada membro da nossa equipe possui
             vasta experiência prática e conhecimento científico atualizado.
@@ -114,7 +114,13 @@ export const About = async () => {
           </List>
           <Button
             variant="contained"
-            sx={{ textTransform: 'none', borderRadius: 2, marginY: 4, bgcolor:'primary.light','&:hover':{bgcolor:'primary.main'} }}
+            sx={{
+              textTransform: 'none',
+              borderRadius: 2,
+              marginY: 4,
+              bgcolor: 'primary.light',
+              '&:hover': { bgcolor: 'primary.main' },
+            }}
           >
             Conheça Nossa Equipe <ArrowRight style={{ scale: 0.8, marginLeft: 15 }} />
           </Button>

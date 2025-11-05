@@ -14,9 +14,12 @@ export const Services = () => {
         textAlign: 'center',
       }}
     >
-      <Title sectionTitle='Nosso Serviços' title='Especialização em Três Culturas Estratégicas' description='Nossa expertise abrange as principais commodities do agronegócio brasileiro, oferecendo
-          soluções personalizadas para cada cultura.' />
-      
+      <Title
+        sectionTitle="Nosso Serviços"
+        title="Especialização em Três Culturas Estratégicas"
+        description="Nossa expertise abrange as principais commodities do agronegócio brasileiro, oferecendo
+          soluções personalizadas para cada cultura."
+      />
 
       <Box
         sx={{
@@ -64,7 +67,6 @@ export const Services = () => {
           Iten4="Integração lavoura-pecuária"
           resume="35% maior resistência à estiagem"
         />
-
       </Box>
 
       <Box
@@ -77,10 +79,10 @@ export const Services = () => {
           marginTop: 4,
         }}
       >
-        <Typography sx={{ fontSize: 22, fontWeight: 600, margin: 2 }}>
+        <Typography variant="h1" sx={{ fontSize: 22, fontWeight: 600, margin: 2 }}>
           Pronto para Revolucionar sua Produção?
         </Typography>
-        <Typography sx={{ fontSize: 16, paddingX: 30 }}>
+        <Typography variant="body1" sx={{ fontSize: 16, paddingX: 30 }}>
           Nossa equipe de especialistas está pronta para analisar sua propriedade e desenvolver
           estratégias personalizadas para maximizar seus resultados.
         </Typography>
@@ -89,13 +91,13 @@ export const Services = () => {
           sx={{
             backgroundColor: 'white',
             color: 'primary.light',
-            textTransform:'capitalize',
+            textTransform: 'capitalize',
             margin: 2,
             fontSize: 12,
             fontWeight: 600,
             padding: 1,
             borderRadius: 2,
-            '&:hover':{bgcolor:'grey.200'}
+            '&:hover': { bgcolor: 'grey.200' },
           }}
         >
           Agendar Consultoria Gratuita
