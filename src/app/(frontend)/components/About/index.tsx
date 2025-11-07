@@ -97,7 +97,7 @@ export const About = async () => {
 
       <Box sx={{ display: 'grid', gridTemplateColumns: '1fr 1fr', marginY: 6 }}>
         <Box sx={{ textAlign: 'left', width: '100%', paddingRight: 2 }}>
-          <Typography variant="h2" sx={{ color: 'black', fontSize: 20, fontWeight: 600 }}>
+          <Typography variant="h2" sx={{ color: 'black', fontSize: 20, fontWeight: 600,marginBottom:4 }}>
             Nossa Equipe de Especialistas
           </Typography>
           <Typography variant="body1" sx={{ color: 'grey.700', fontSize: 16, fontWeight: 500 }}>
@@ -150,6 +150,17 @@ export const About = async () => {
           >
             Conheça Nossa Equipe <ArrowRight style={{ scale: 0.8, marginLeft: 15 }} />
           </Button>
+        </Box>
+        <Box sx={{bgcolor:'#F0F7F4', width:'95%', height:'65%',display:'flex', justifySelf:'end',alignSelf:'center',borderRadius:3,gap:2,
+        flexDirection:'column',marginRight:2
+        }}><Box sx={{width:'100%', height:'100%',display:'flex', flexDirection:'row',gap:2}}>
+          <Box sx={{bgcolor:'#CAF5DA',width:'100%', height:'100%',borderRadius:3}}></Box>
+          <Box sx={{bgcolor:'#AEF3C6',width:'100%', height:'75%',borderRadius:3,alignSelf:'end'}}></Box>
+          </Box>
+          <Box sx={{width:'100%', height:'100%',display:'flex', flexDirection:'row',gap:2}}>
+          <Box sx={{bgcolor:'#AEF3C6',width:'100%', height:'75%',borderRadius:3}}></Box>
+          <Box sx={{bgcolor:'#CAF5DA',width:'100%', height:'100%',borderRadius:3}}></Box>
+          </Box>
         </Box>
       </Box>
     </Box>
