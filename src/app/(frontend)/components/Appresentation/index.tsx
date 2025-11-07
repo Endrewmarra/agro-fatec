@@ -15,7 +15,7 @@ export const Appresentation = async () => {
         width: '100vw',
         paddingLeft: 11,
         paddingRight: 11,
-        backgroundImage: 'linear-gradient(to bottom, #EBFDF1 , #E1FDEB)',
+        backgroundImage: 'linear-gradient(to bottom, var(--bg-gradient-start) , var(--bg-gradient-stop))',
         
         alignItems: 'center',
         justifyItems: 'center',
@@ -45,25 +45,25 @@ export const Appresentation = async () => {
 
         <Grid container  spacing={2} sx={{marginBottom:4}}>
           <Grid size={6} sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-            <CircleCheckBig color="#00a63e" size={20} />
+            <CircleCheckBig color='var(--primary-light)' size={20} />
             <Typography variant="body1" sx={{ fontSize: 16, fontWeight: 300, color: 'grey.800' }}>
               + 15 Anos de Experiência
             </Typography>
           </Grid>
           <Grid size={6} sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-            <CircleCheckBig color="#00a63e" size={20} />
+            <CircleCheckBig color='var(--primary-light)' size={20} />
             <Typography variant="body1" sx={{ fontSize: 16, fontWeight: 300, color: 'grey.800' }}>
               + 500 Fazendas Atendidas
             </Typography>
           </Grid>
           <Grid size={6} sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-            <CircleCheckBig color="#00a63e" size={20} />
+            <CircleCheckBig color='var(--primary-light)' size={20} />
             <Typography variant="body1" sx={{ fontSize: 16, fontWeight: 300, color: 'grey.800' }}>
               30% Aumento Médio
             </Typography>
           </Grid>
           <Grid size={6} sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-            <CircleCheckBig color="#00a63e" size={20} />
+            <CircleCheckBig color='var(--primary-light)' size={20} />
             <Typography variant="body1" sx={{ fontSize: 16, fontWeight: 300, color: 'grey.800' }}>
               Suporte 24/7
             </Typography>

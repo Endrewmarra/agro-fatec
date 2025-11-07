@@ -21,7 +21,7 @@ export const About = async () => {
   return (
     <Box
       sx={{
-        bgcolor: '#F9FAFB',
+        bgcolor: 'secondary.50',
         width: '100vw',
         paddingX: 15,
         paddingY: 8,
@@ -108,7 +108,7 @@ export const About = async () => {
           <List sx={{ color: 'black' }}>
             <ListItem sx={{ marginY: -2 }}>
               <ListItemIcon sx={{ scale: 2, marginRight: -5 }}>
-                <Dot color="#00a63e" />
+                <Dot color='var(--primary-light)' />
               </ListItemIcon>
               <ListItemText
                 sx={{ scale: 0.85, marginLeft: -5, marginTop: 3 }}
@@ -118,7 +118,7 @@ export const About = async () => {
             </ListItem>
             <ListItem sx={{ marginY: -4 }}>
               <ListItemIcon sx={{ scale: 2, marginRight: -5 }}>
-                <Dot color="#00a63e" />
+                <Dot color='var(--primary-light)' />
               </ListItemIcon>
               <ListItemText
                 sx={{ scale: 0.85, marginLeft: -5, marginTop: 3 }}
@@ -128,7 +128,7 @@ export const About = async () => {
             </ListItem>
             <ListItem sx={{ marginY: -4 }}>
               <ListItemIcon sx={{ scale: 2, marginRight: -5 }}>
-                <Dot color="#00a63e" />
+                <Dot color='var(--primary-light)' />
               </ListItemIcon>
               <ListItemText
                 sx={{ scale: 0.85, marginLeft: -5, marginTop: 3 }}

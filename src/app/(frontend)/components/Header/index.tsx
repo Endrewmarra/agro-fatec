@@ -15,7 +15,7 @@ export const Header = () => {
         position: 'fixed',
         backgroundColor: 'white',
         zIndex: 2,
-        borderBottom: '1px solid #dededeff',
+        borderBottom: '1px solid var(--header-divider)',
       }}
     >
       <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>

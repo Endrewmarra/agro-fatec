@@ -27,10 +27,10 @@ export const CardServices = ({
   resume,
 }: CardServicesProps) => {
   return (
-    <Card sx={{ borderRadius: 4, boxShadow: '0px 2px 5px  rgba(0,0,0,0.5)' }}>
+    <Card sx={{ borderRadius: 4, boxShadow: '0px 2px 5px  var(--shadow)' }}>
       <Box
         sx={{
-          backgroundColor: 'white',
+          backgroundColor: 'var(--bg-white)',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
@@ -69,28 +69,28 @@ export const CardServices = ({
           <List sx={{ color: 'grey.600', fontSize: 14, lineHeight: 1,}}>
             <ListItem sx={{ marginBottom:-2}}>
               <ListItemIcon sx={{ scale: 2, marginRight: -5,}}>
-                <Dot color="#00a63e" />
+                <Dot color='var(--primary-light)' />
               </ListItemIcon>
               {Iten1}
             </ListItem>
 
             <ListItem sx={{ marginBottom:-2}}>
               <ListItemIcon sx={{ scale: 2, marginRight: -5 }}>
-                <Dot color="#00a63e" />
+                <Dot color='var(--primary-light)' />
               </ListItemIcon>
               {Iten2}
             </ListItem>
 
             <ListItem sx={{ marginBottom:-2}}>
               <ListItemIcon sx={{ scale: 2, marginRight: -5 }}>
-                <Dot color="#00a63e" />
+                <Dot color='var(--primary-light)' />
               </ListItemIcon>
               {Iten3}
             </ListItem>
 
             <ListItem>
               <ListItemIcon sx={{ scale: 2, marginRight: -5 }}>
-                <Dot color="#00a63e" />
+                <Dot color='var(--primary-light)' />
               </ListItemIcon>
               {Iten4}
             </ListItem>

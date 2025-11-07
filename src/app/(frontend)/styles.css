@@ -3,9 +3,20 @@
   --font-mono: 'Roboto Mono', monospace;
 
   --primary: #016630;
+  --primary-light:#00A63E;
+  --secondary-main:#abd5b4ff;
+  --secondary-light:#E3FCEB;
+  --bg-white:#fff;
+  --bg-grey:#F9FAFB;
+  --bg-gradient-start:#EBFDF1;
+  --bg-gradient-stop:#E1FDEB;
   --primary-foreground: oklch(1 0 0);
   --secondary: #231F20;
   --secondary-foreground: #030213;
+  --footer-divider:#364153;
+  --header-divider:#dededeff;
+  --shadow:rgba(0,0,0,0.5);
+
 }
 
 * {

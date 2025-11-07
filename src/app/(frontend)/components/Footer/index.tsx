@@ -118,7 +118,7 @@ export const Footer = () => {
           Contato
           <Box sx={{ color: 'grey', fontWeight: 500 }}>
             <Box>
-              <MapPin color="#00a63e" />
+              <MapPin color='var(--primary-light)' />
 
               <Typography
                 variant="h6"
@@ -140,7 +140,7 @@ export const Footer = () => {
               </Typography>
             </Box>
             <Box sx={{ marginBottom: 1 }}>
-              <Phone color="#00a63e" />
+              <Phone color='var(--primary-light)' />
               <Typography
                 variant="body1"
                 sx={{ display: 'inline', verticalAlign: 'top', marginLeft: 2, fontSize: 16 }}
@@ -149,7 +149,7 @@ export const Footer = () => {
               </Typography>
             </Box>
             <Box sx={{ marginBottom: 1 }}>
-              <Mail color="#00a63e" />
+              <Mail color='var(--primary-light)' />
               <Typography
                 variant="body1"
                 sx={{ display: 'inline', verticalAlign: 'top', marginLeft: 2, fontSize: 16 }}
@@ -168,7 +168,7 @@ export const Footer = () => {
         </Box>
       </Box>
 
-      <Box sx={{ borderTop: '2px solid #364153' }}></Box>
+      <Box sx={{ borderTop: '2px solid var(--footer-divider)' }}></Box>
       <Grid container spacing={2} sx={{ color: 'grey.500', marginTop: 4, fontSize: 14 }}>
         <Grid size={8}>© 2024 AgroConsult. Todos os direitos reservados.</Grid>
         <Grid size={4} sx={{ display: 'flex', gap: 2 }}>

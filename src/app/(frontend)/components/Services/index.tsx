@@ -71,7 +71,7 @@ export const Services = () => {
       <Box
         sx={{
           width: '100%',
-          backgroundImage: 'linear-gradient(to right, #00A63E , #008236)',
+          backgroundImage: 'linear-gradient(to right, var(--primary-light) , #008236)',
           color: 'white',
           borderRadius: 4,
           padding: 4,
@@ -88,7 +88,7 @@ export const Services = () => {
         <Button
           variant="text"
           sx={{
-            backgroundColor: 'white',
+            backgroundColor: 'var(--bg-white)',
             color: 'primary.light',
             textTransform: 'capitalize',
             margin: 2,
