@@ -46,7 +46,7 @@ export const CardServices = ({
         <Box sx={{ color: 'primary.light', display: 'flex', alignContent: 'center' }}>{icon}</Box>
       </Box>
       <CardMedia
-        sx={{ '&:hover': { scale: 1.1, transition: '0.2s' }, transition: '0.2s' }}
+        sx={{ '&:hover': { scale: 1.1, transition: '0.2s' }, transition: '0.2s' ,}}
         component="img"
         alt={alt}
         height="200px"

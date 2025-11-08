@@ -6,6 +6,7 @@ interface CardAppresentationProps {
   description: string
 }
 
+
 export const Title = ({ sectionTitle, title, description }: CardAppresentationProps) => {
   return (
     <Box sx={{ marginBottom: 8 }}>
@@ -15,7 +16,7 @@ export const Title = ({ sectionTitle, title, description }: CardAppresentationPr
         sx={{
           bgcolor: 'secondary.light',
           color: 'primary.main',
-          fontWeight: 600,
+          fontWeight: 600, 
           fontSize: 12,
           marginBottom: 2,
         }}

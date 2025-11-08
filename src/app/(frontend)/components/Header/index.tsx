@@ -50,7 +50,7 @@ export const Header = () => {
       >
         <Box
           component={Link}
-          href="#"
+          href="../../"
           sx={{
             textDecoration: 'none',
             color: 'primary.main',
@@ -75,7 +75,7 @@ export const Header = () => {
         </Box>
         <Box
           component={Link}
-          href="/fale-conosco"
+          href="/FaleConosco"
           sx={{
             textDecoration: 'none',
             color: 'grey.700',
