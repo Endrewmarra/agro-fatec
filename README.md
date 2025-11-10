@@ -94,7 +94,7 @@ Conhecer ferramentas e ter contato com tecnologias utilizadas para desenvolvimen
 
 A página principal foi desenvolvida seguindo os padrões do FIGMA, porem sem preocupações de proporção e resolução de tela, foi desenvolvida com apenas em meu monitor.
 
-[Prototipo no Figma](www.figma.com/make/5BS97MSkojVd8CC4Pahpjz/Home-Page-Prototype?node-id=0-1&p=f&t=HZPR6ZGGoCtQqTrY-0)
+[Prototipo no Figma](https://www.figma.com/make/5BS97MSkojVd8CC4Pahpjz/Home-Page-Prototype?node-id=0-1&p=f&t=HZPR6ZGGoCtQqTrY-0)
 
 ![Minha Pagina](./AgroConsultPAge.png)
 
