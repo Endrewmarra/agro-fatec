@@ -83,6 +83,7 @@ Conhecer ferramentas e ter contato com tecnologias utilizadas para desenvolvimen
 - [X] Criar as seções do site como componentes (Header, Appresentation...)
 - [X] Definir Componentes para renderizarem como layout (Header e Footer)
 - [X] Componentizar os elementos que se repetem em cada seção do site
+- [x] Revisar e corrigir erros ou reclamações do Next
 - [ ] Criar uma pagina NotFound
 - [X] Criar rota para outras paginas
 - [ ] Adcionar funcionalidade aos botões da pagina
@@ -93,6 +94,7 @@ Conhecer ferramentas e ter contato com tecnologias utilizadas para desenvolvimen
 ## Estado Atual
 
 A página principal foi desenvolvida seguindo os padrões do FIGMA, porem sem preocupações de proporção e resolução de tela, foi desenvolvida com apenas em meu monitor.
+Segue Abaixo a página de referencia e um print de como esta a minha.
 
 [Prototipo no Figma](https://www.figma.com/make/5BS97MSkojVd8CC4Pahpjz/Home-Page-Prototype?node-id=0-1&p=f&t=HZPR6ZGGoCtQqTrY-0)
 
