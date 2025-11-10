@@ -23,7 +23,6 @@ Ele utiliza **Next.js** para o frontend e **Payload CMS** para gerenciamento din
 - Interface profissional
 - Painel administrativo acessível via `/admin`
 - Criação e gerenciamento de conteúdo sem editar código
-- Upload e gerenciamento de imagens
 - Seções dinâmicas atualizadas pelo Payload CMS
 - **Métricas da seção “Sobre” atualizadas automaticamente**, como:
   - Número de propriedades atendidas
@@ -46,7 +45,6 @@ cd agro-fatec
 ```bash
 cp .env.example .env
 ```
-
 
 ### 3. Instale dependências e execute o projeto
 
@@ -77,6 +75,18 @@ Caso encontre problemas, exclua os dados de usario em agro-course.db
 ## 🎯 Objetivo do Projeto
 
 Conhecer ferramentas e ter contato com tecnologias utilizadas para desenvolvimento web
+
+---
+
+## Etapas
+
+- [X] Criar as seções do site como componentes (Header, Appresentation...)
+- [X] Definir Componentes para renderizarem como layout (Header e Footer)
+- [X] Componentizar os elementos que se repetem em cada seção do site
+- [ ] Criar uma pagina NotFound
+- [X] Criar rota para outras paginas
+- [ ] Adcionar funcionalidade aos botões da pagina
+- [ ] Tornar a pagina responsiva
 
 ---
 
